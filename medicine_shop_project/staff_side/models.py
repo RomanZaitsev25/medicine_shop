@@ -1,14 +1,5 @@
 from django.db import models
 
-# Create your models here.
-
-from django.core.cache import cache
-from django.db import models
-from django.db import models
-from django.urls import reverse
-
-# Create your models here.
-
 
 class Staff(models.Model):
     id = models.AutoField(primary_key=True, unique=True)
