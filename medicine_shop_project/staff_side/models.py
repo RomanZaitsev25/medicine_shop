@@ -17,7 +17,7 @@ class Staff(models.Model):
     second_name = models.CharField(max_length=250)
     age = models.IntegerField(null=False)
     schedule_type = models.CharField(max_length=250, choices=SCHEDULE_TYPE, default='FULL_TIME')
-    background = models.CharField(max_length=250)
+    background = models.ForeignKey('Backgrounds', on_delete=models.PROTECT)
     position = models.ForeignKey('Positions', on_delete=models.PROTECT)
     _salary = models.FloatField(default=0.0)
     vacations = models.IntegerField(default=25)
@@ -46,3 +46,10 @@ class Positions(models.Model):
     def __str__(self):
         return f" Позиция: {self.post_name} Обязанности: {self.responsibility}"
 #
+
+class Backgrounds(models.Model):
+    id = models.AutoField(primary_key=True, unique=True)
+    educational_institution = models.CharField(max_length=250)
+
+    def __str__(self):
+        return f" Позиция: {self.educational_institution}"

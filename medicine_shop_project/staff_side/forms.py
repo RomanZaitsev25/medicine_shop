@@ -21,3 +21,4 @@ class StaffForm(forms.ModelForm):
                     "Требуется письменное согласие родителей!"
                 )
         return age
+
