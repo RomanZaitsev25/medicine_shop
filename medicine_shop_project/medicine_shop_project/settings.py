@@ -12,6 +12,15 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 
+import os
+from dotenv import dotenv_values
+
+dotenv_path = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))), '.env')
+
+config = dotenv_values(dotenv_path)
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -20,7 +29,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-ea28#^fwrn&j%36-mo)528pjgpgbrl1ctxw=g+@%d=1c7_b8y('
+SECRET_KEY = config['SECRET_KEY']
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -123,3 +133,9 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Экспортируем модель базы данных:
+# manage.py dumpdata --indent 2 > mydata.json
+# Экспортируем всю базы данных:
+# исключить таблицы contenttypes и auth.permissions:
+# manage.py dumpdata --exclude auth.permission --exclude contenttypes --indent 2 > db.json
