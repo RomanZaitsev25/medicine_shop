@@ -46,6 +46,7 @@ class Positions(models.Model):
     def __str__(self):
         return f" Позиция: {self.post_name} Обязанности: {self.responsibility}"
 
+
 class Backgrounds(models.Model):
     id = models.AutoField(primary_key=True, unique=True)
     educational_institution = models.CharField(max_length=250)
