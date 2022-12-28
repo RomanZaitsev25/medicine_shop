@@ -24,5 +24,5 @@ class StaffForm(forms.ModelForm):
                 raise ValidationError(
                     "Требуется письменное согласие родителей!"
                 )
-        return age
+        return date_of_birth
 

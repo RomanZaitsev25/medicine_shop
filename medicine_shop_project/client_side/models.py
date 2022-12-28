@@ -1,8 +1,6 @@
 from django.db import models
 from django.urls import reverse
 
-from medicine_shop_project.staff_side.models import Staff
-
 
 class Manufacturer(models.Model):
     id = models.AutoField(primary_key=True, unique=True)
@@ -41,7 +39,7 @@ class Medicine(models.Model):
             self.save()
 
     class Meta:
-        ordering = ["-the_cost_of_the_medicines"]
+        ordering = ["-price"]
         unique_together = [["trade_name", "international_name"]]  # взаимоуникальные значения
 
     def get_absolute_url(self):
@@ -58,7 +56,6 @@ class Order(models.Model):
     cost = models.FloatField(verbose_name='Стоимость', default=0.0)
     complete = models.BooleanField(verbose_name='Готовность заказа', default=False)
 
-    staff = models.ForeignKey(Staff, verbose_name='Сотрудник', on_delete=models.CASCADE)
     medicines = models.ManyToManyField(Medicine, verbose_name='Лекарства', through='MedicineOrder')
 
 
