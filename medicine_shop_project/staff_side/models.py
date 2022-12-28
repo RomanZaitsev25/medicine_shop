@@ -42,7 +42,8 @@ class Staff(models.Model):
     vacations = models.IntegerField(verbose_name='Дней отпуска', default=25)
 
     def __str__(self):
-        return f"Имя: {self.first_name}, Фамилия: {self.second_name}, Должность: {self.position}"
+        return f"Имя: {self.first_name}, Фамилия: {self.second_name}," \
+               f" Должность: {self.position}"
 
     @property
     def salary(self):

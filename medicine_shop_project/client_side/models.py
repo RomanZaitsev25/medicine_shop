@@ -2,17 +2,23 @@ from django.db import models
 from django.urls import reverse
 
 
+
+
 class Manufacturer(models.Model):
     id = models.AutoField(primary_key=True, unique=True)
-
     legacy_name = models.CharField(max_length=250, unique=True)
-    country = models.CharField(max_length=250)  # ForeignKey to Country
+    country = models.ForeignKey('Country', on_delete=models.PROTECT)  # ForeignKey to Country
     legacy_address = models.CharField(max_length=250)
 
     # contacts
     site = models.URLField()
     contacts = models.CharField(max_length=250)
     email = models.EmailField()
+
+
+class Country(models.Model):
+    id = models.AutoField(primary_key=True, unique=True)
+    name_country = models.CharField(max_length=250, unique=True)
 
 
 class Medicine(models.Model):

@@ -25,3 +25,5 @@ class BackgroundAdmin(admin.ModelAdmin):
     list_display = ('educational_institution', 'education_completeness')
     list_filter = ('educational_institution',)
     search_fields = ('educational_institution', 'education_completeness')
+
+#admin.site.register(Backgrounds)

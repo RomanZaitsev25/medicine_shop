@@ -18,7 +18,6 @@ class StaffForm(forms.ModelForm):
         age = floor((datetime.datetime.now().date() - date_of_birth).days / 365)
         if age < 14:
             raise ValidationError("Недопустимый возраст")
-
         else:
             if 14 < age < 18:
                 raise ValidationError(
