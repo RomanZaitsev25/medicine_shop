@@ -3,6 +3,7 @@ from enum import Enum
 
 from django.db import models
 from django.template.defaultfilters import truncatechars
+from django.urls import reverse
 
 
 class Schedule(Enum):
@@ -16,12 +17,30 @@ class EducationCompleteness(Enum):
     NOT_FULL = "NOT_FULL"
 
 
+# class Female(Enum):
+#     Men = 'M'
+#     Women = 'W'
+
 class Staff(models.Model):
+
     SCHEDULE_TYPE = [
         (Schedule.FLEXIBLE.value, 'Гибкий график'),
         (Schedule.FULL_TIME.value, 'Полный день'),
         (Schedule.PART_TIME.value, 'Частичная занятость'),
     ]
+    # FEMALE_TYPE = [
+    #     (Female.Men.value, 'M'),
+    #     (Female.Women.value, 'W'),
+    # ]
+    FEMALE_TYPE = [
+        ('Man', 'M'),
+        ('Women', 'W'),
+
+    ]
+    # female = models.CharField(max_length=1, verbose_name='Пол',
+    #                           choices=FEMALE_TYPE, default='M')
+    female = models.CharField(max_length=5, verbose_name='Пол',
+                              choices=FEMALE_TYPE, default='M')
     id = models.AutoField(primary_key=True, unique=True)
     first_name = models.CharField(verbose_name='Имя', max_length=250)
     second_name = models.CharField(verbose_name='Фамилия', max_length=250)
@@ -41,9 +60,12 @@ class Staff(models.Model):
     _salary = models.FloatField(verbose_name='ЗП, $', default=0.0)
     vacations = models.IntegerField(verbose_name='Дней отпуска', default=25)
 
+    # отображение кнопки в админке
+
     def __str__(self):
-        return f"Имя: {self.first_name}, Фамилия: {self.second_name}," \
+        return f"Имя: {self.first_name}   Фамилия: {self.second_name}" \
                f" Должность: {self.position}"
+
 
     @property
     def salary(self):
@@ -70,8 +92,8 @@ class Positions(models.Model):
         return truncatechars(self.responsibility, 35)
 
     def __str__(self):
-        return f" Позиция: {self.post_name}, " \
-               f"Обязанности: {self.short_description_responsibility}"
+        return f"{self.post_name} " \
+               # f"\n Обязанности: {self.short_description_responsibility}"
 
     class Meta:
         verbose_name = 'Должность'

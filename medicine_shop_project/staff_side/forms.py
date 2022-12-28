@@ -3,6 +3,7 @@ from math import floor
 
 from django import forms
 from django.core.exceptions import ValidationError
+
 from .models import Staff
 
 
@@ -10,8 +11,10 @@ class StaffForm(forms.ModelForm):
 
     class Meta:
         model = Staff
-        fields = ['first_name', 'second_name', 'date_of_birth', 'schedule_type',
+        fields = ['first_name', 'second_name', 'female', 'date_of_birth', 'schedule_type',
                   'background', 'position',  '_salary', 'vacations']
+
+
 
     def clean_date_of_birth(self):
         date_of_birth = self.cleaned_data["date_of_birth"]
