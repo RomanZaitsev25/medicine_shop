@@ -3,6 +3,7 @@ from enum import Enum
 
 from django.db import models
 from django.template.defaultfilters import truncatechars
+from django.urls import reverse
 
 
 class Schedule(Enum):
@@ -33,7 +34,6 @@ class Staff(models.Model):
         (Sex.WOMAN.value, 'Жен'),
     ]
 
-
     id = models.AutoField(primary_key=True, unique=True)
     first_name = models.CharField(verbose_name='Имя', max_length=250)
     second_name = models.CharField(verbose_name='Фамилия', max_length=250)
@@ -60,6 +60,9 @@ class Staff(models.Model):
     def __str__(self):
         return f"Имя: {self.first_name}   Фамилия: {self.second_name}" \
                f" Должность: {self.position}"
+
+    def get_absolute_url(self):
+        return reverse('staff_details', args=[self.pk])
 
     @property
     def salary(self):

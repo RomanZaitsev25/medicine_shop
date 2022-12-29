@@ -1,6 +1,8 @@
 from django.contrib import admin
+from django.utils.safestring import mark_safe
 
 from .models import Order, Medicine, Country, Manufacturer, MedicineOrder, MedicineManufacturer
+from .forms import MedicineForm, ManufacturerForms, MedicineManufacturerForms
 
 
 class MedicineManufacturerInline(admin.TabularInline):
@@ -8,7 +10,7 @@ class MedicineManufacturerInline(admin.TabularInline):
     verbose_name = 'Производитель лекарств'
     verbose_name_plural = 'Производители лекарств'
     extra = 1
-
+    form = MedicineManufacturerForms
 
 class MedicineOrderInline(admin.TabularInline):
     model = MedicineOrder
@@ -29,10 +31,26 @@ class OrderAdmin(admin.ModelAdmin):
 @admin.register(Medicine)
 class MedicineAdmin(admin.ModelAdmin):
     inlines = (MedicineManufacturerInline,)
-    list_display = ('trade_name', 'price')
-    list_filter = ('trade_name', 'price')
-    search_fields = ('trade_name', 'price')
-    # form = MedicineForm
+    list_display = ('trade_name', 'price', 'sale_of_medicines' )
+    list_filter = ('trade_name', 'price', 'sale_of_medicines')
+    search_fields = ('trade_name', 'price', 'sale_of_medicines')
+    form = MedicineForm
+    save_on_top = True
+    fieldsets = (
+        ('Общие данные', {
+            'fields': ('trade_name', 'international_name', 'structure')
+        }),
+        ('Дополнительные данные', {
+            'fields': ('price', '_price_increment', 'sale_of_medicines')
+        }),
+    )
+
+    # def image_show(self, obj):
+    #     if obj.image:
+    #         return mark_safe("<img src='{}' width = '60'/>"
+    #                          ".format(obj.image.url)")
+    #     return "None"
+    # image_show.__name__ = "Картинка"
 
 
 @admin.register(Country)
@@ -47,3 +65,4 @@ class ManufacturerAdmin(admin.ModelAdmin):
     list_display = ('id', 'legacy_name', 'country', 'site')
     list_filter = ('legacy_name', 'country', 'site')
     search_fields = ('legacy_name', 'country', 'site')
+    form = ManufacturerForms

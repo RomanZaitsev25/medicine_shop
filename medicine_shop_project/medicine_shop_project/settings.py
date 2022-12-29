@@ -20,6 +20,7 @@ dotenv_path = os.path.join(
 
 config = dotenv_values(dotenv_path)
 
+# CART_SESSION_ID = 'cart'
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
