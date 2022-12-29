@@ -33,11 +33,12 @@ class Staff(models.Model):
         (Sex.WOMAN.value, 'Жен'),
     ]
 
-    sex = models.CharField(max_length=1, verbose_name='Пол',
-                           choices=SEX, default='M')
+
     id = models.AutoField(primary_key=True, unique=True)
     first_name = models.CharField(verbose_name='Имя', max_length=250)
     second_name = models.CharField(verbose_name='Фамилия', max_length=250)
+    sex = models.CharField(max_length=1, verbose_name='Пол',
+                           choices=SEX, default='M')
     date_of_birth = models.DateField(
         verbose_name='Дата рождения',
         default=datetime.date(day=1, month=1, year=1970),

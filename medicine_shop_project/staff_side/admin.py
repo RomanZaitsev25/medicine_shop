@@ -8,7 +8,7 @@ from .models import Staff, Positions, Backgrounds
 @admin.register(Staff)
 class StaffAdmin(admin.ModelAdmin):
     list_display = ('first_name', 'second_name', 'date_of_birth', 'position')
-    list_display_links = ('first_name',)
+    list_display_links = ('first_name', 'second_name')
     list_filter = ('second_name', 'date_of_birth', 'position', 'schedule_type')
     search_fields = ('first_name', 'second_name', 'date_of_birth', 'position')
     fieldsets = (
@@ -20,7 +20,6 @@ class StaffAdmin(admin.ModelAdmin):
                        '_salary', 'vacations')
         }),
     )
-
     form = StaffForm
     save_on_top = True
 

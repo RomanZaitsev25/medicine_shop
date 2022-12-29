@@ -13,7 +13,10 @@ class StaffForm(forms.ModelForm):
         model = Staff
         fields = ['first_name', 'second_name', 'sex', 'date_of_birth', 'schedule_type',
                   'background', 'position',  '_salary', 'vacations']
-
+        # fields = '__all__'
+        # widgets = {
+        #     'first_name': forms.TextInput(attrs={'class': 'form-input'})
+        # }
     def clean_date_of_birth(self):
         date_of_birth = self.cleaned_data["date_of_birth"]
         age = floor((datetime.datetime.now().date() - date_of_birth).days / 365)
