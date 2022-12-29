@@ -13,11 +13,9 @@ class StaffAdmin(admin.ModelAdmin):
     search_fields = ('first_name', 'second_name', 'date_of_birth', 'position')
     fieldsets = (
         ('Общие данные', {
-            'classes': ('collapse',),
-            'fields': ('first_name', 'second_name', 'female', 'date_of_birth')
+            'fields': ('first_name', 'second_name', 'sex', 'date_of_birth')
         }),
         ('Профессиональные данные', {
-            'classes': ('collapse',),
             'fields': ('schedule_type', 'background', 'position',
                        '_salary', 'vacations')
         }),
