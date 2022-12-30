@@ -1,8 +1,8 @@
 from django.contrib import admin
-from django.utils.safestring import mark_safe
+# from django.utils.safestring import mark_safe
 
 from .models import Order, Medicine, Country, Manufacturer, MedicineOrder, MedicineManufacturer
-from .forms import MedicineForm, ManufacturerForms, MedicineManufacturerForms
+from .forms import MedicineForm, ManufacturerForms, OrderForm
 
 
 class MedicineManufacturerInline(admin.TabularInline):
@@ -10,7 +10,7 @@ class MedicineManufacturerInline(admin.TabularInline):
     verbose_name = 'Производитель лекарств'
     verbose_name_plural = 'Производители лекарств'
     extra = 1
-    form = MedicineManufacturerForms
+
 
 class MedicineOrderInline(admin.TabularInline):
     model = MedicineOrder
@@ -22,18 +22,18 @@ class MedicineOrderInline(admin.TabularInline):
 @admin.register(Order)
 class OrderAdmin(admin.ModelAdmin):
     inlines = (MedicineOrderInline,)
-    list_display = ('receive_date_time', 'cost', 'complete')
-    list_filter = ('receive_date_time', 'cost', 'complete')
-    search_fields = ('receive_date_time', 'cost', 'complete')
-    # form = OrderForm
+    list_display = ('receive_date_time', 'delivery_date_time', 'cost', 'complete')
+    list_filter = ('receive_date_time', 'delivery_date_time', 'cost', 'complete')
+    search_fields = ('receive_date_time', 'delivery_date_time', 'cost', 'complete')
+    form = OrderForm
 
 
 @admin.register(Medicine)
 class MedicineAdmin(admin.ModelAdmin):
     inlines = (MedicineManufacturerInline,)
-    list_display = ('trade_name', 'price', 'sale_of_medicines' )
-    list_filter = ('trade_name', 'price', 'sale_of_medicines')
-    search_fields = ('trade_name', 'price', 'sale_of_medicines')
+    list_display = ('trade_name', 'price', 'with_recipe')
+    list_filter = ('trade_name', 'price', 'with_recipe')
+    search_fields = ('trade_name', 'price', 'with_recipe')
     form = MedicineForm
     save_on_top = True
     fieldsets = (
@@ -41,7 +41,7 @@ class MedicineAdmin(admin.ModelAdmin):
             'fields': ('trade_name', 'international_name', 'structure')
         }),
         ('Дополнительные данные', {
-            'fields': ('price', '_price_increment', 'sale_of_medicines')
+            'fields': ('price', '_price_increment', 'with_recipe', 'slug')
         }),
     )
 

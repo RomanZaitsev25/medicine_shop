@@ -46,8 +46,8 @@ class Manufacturer(models.Model):
 
 class Medicine(models.Model):
     DRUG_IMPLEMENTATION = [
-        ('on medical prescription', 'по рецепту'),
-        ('without medical prescription', 'без рецепта' )
+        (True, 'по рецепту'),
+        (False, 'без рецепта')
     ]
     id = models.AutoField(primary_key=True, unique=True)
     trade_name = models.CharField(
@@ -69,10 +69,11 @@ class Medicine(models.Model):
     )
     slug = models.SlugField(default='', unique=True)
     _price_increment = models.IntegerField(verbose_name='Наценка')
-    sale_of_medicines = models.CharField(verbose_name='продажа лекарства',
-                                         max_length=250,
-                                         choices=DRUG_IMPLEMENTATION,
-                                         default='on medical prescription')
+    with_recipe = models.BooleanField(
+        verbose_name='По рецепту',
+        choices=DRUG_IMPLEMENTATION,
+        default=False,
+    )
 
     @property  # получение значения защищенного поля
     def price_increment(self):
@@ -148,6 +149,9 @@ class MedicineOrder(models.Model):
     medicine = models.ForeignKey(Medicine, on_delete=models.CASCADE)
     order = models.ForeignKey(Order, on_delete=models.CASCADE)
     amount = models.IntegerField(default=1)
+
+    def get_total_medicine_cost(self):
+        return self.medicine.price * self.amount
 
     def __str__(self):
         return f"{self.medicine} - {self.order}"

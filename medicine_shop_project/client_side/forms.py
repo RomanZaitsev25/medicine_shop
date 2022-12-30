@@ -1,9 +1,10 @@
+import datetime
 import re
 
 from django import forms
 from django.core.exceptions import ValidationError
 
-from .models import Order, Medicine, Manufacturer, MedicineManufacturer
+from .models import Order, Medicine, Manufacturer
 
 
 class MedicineForm(forms.ModelForm):
@@ -12,18 +13,21 @@ class MedicineForm(forms.ModelForm):
         model = Medicine
         fields = ['trade_name', 'international_name', 'structure',
                   'price', 'manufacturer', '_price_increment',
-                  'sale_of_medicines']
+                  'with_recipe', 'slug']
         widgets = {
-            'structure': forms.Textarea(attrs={'cols': 60, 'rows': 7})
+            'structure': forms.Textarea(attrs={'cols': 60, 'rows': 7}),
+            'with_recipe': forms.Select(attrs={
+                'class': 'form-control',
+            }),
         }
 
     def clean_price(self):
         price = self.cleaned_data['price']
         if price < 0:
-            raise ValidationError(' Цена не может быть меньше нуля')
+            raise ValidationError('Цена не может быть меньше нуля')
         return price
 
-# Не работает валидация о недопустимых символах
+    # Не работает валидация о недопустимых символах
     def clean_trade_name(self):
         trade_name = self.cleaned_data['trade_name']
         pattern = re.compile(r'[.,?:%^&*!]')
@@ -32,18 +36,18 @@ class MedicineForm(forms.ModelForm):
         return trade_name
 
 
-# class OrderForm(forms.ModelForm):
-#
-#     class Meta:
-#         model = Order
-#         fields = ['receive_date_time', 'delivery_date_time', 'cost',
-#                   'complete', 'medicines']
-#
-#     def clean_cost(self):
-#         cost = self.cleaned_data['cost']
-#         if cost < 0:
-#             raise ValidationError(' Стоимость не может быть меньше нуля')
-#         return cost
+class OrderForm(forms.ModelForm):
+
+    class Meta:
+        model = Order
+        fields = ['delivery_date_time', 'complete']
+
+    def clean_delivery_date_time(self):
+        delivery_date_time = self.cleaned_data['delivery_date_time']
+        if delivery_date_time is not None and delivery_date_time.replace(tzinfo=None) < datetime.datetime.utcnow():
+            raise ValidationError('Дата доставки не может быть меньше даты принятия заказа!')
+        return delivery_date_time
+
 
 class ManufacturerForms(forms.ModelForm):
 
@@ -55,15 +59,5 @@ class ManufacturerForms(forms.ModelForm):
         contacts = self.cleaned_data['contacts']
         pattern = re.compile(r'[.,?:%^&*!]')
         if pattern.findall(contacts):
-            raise ValidationError('Не допустимые символы')
+            raise ValidationError('Недопустимые символы')
         return contacts
-
-# не получилось
-class MedicineManufacturerForms(forms.ModelForm):
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.fields['medicine'].empty_label = 'Лекарство не выбрана'
-
-    class Meta:
-        model = MedicineManufacturer
-        fields = ['medicine', 'manufacturer']
