@@ -16,7 +16,7 @@ class MedicineOrderInline(admin.TabularInline):
     model = MedicineOrder
     verbose_name = 'Лекарство на заказ'
     verbose_name_plural = 'Лекарства на заказ'
-    extra = 1
+    extra = 0
 
 
 @admin.register(Order)

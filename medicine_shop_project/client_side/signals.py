@@ -9,3 +9,4 @@ def set_total_cost_order(sender, instance, **kwargs):
     medicines = MedicineOrder.objects.filter(order__id=instance.id)
     for medicine in medicines:
         instance.cost += medicine.get_total_medicine_cost()
+
