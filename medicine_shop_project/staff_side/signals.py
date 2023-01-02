@@ -1,5 +1,4 @@
-from django.db.models.signals import post_init, post_save, pre_save, \
-    post_delete
+from django.db.models.signals import post_save, post_delete
 from django.dispatch import receiver
 from .models import Staff
 from django.conf import settings
@@ -20,15 +19,6 @@ def used_new_staff(sender, instance, **kwargs):
         print(f'Создан  сотрудник {instance.first_name}')
     else:
         print(f'Добавлены изменения к сотруднику {instance.first_name}')
-
-
-# Почему сигнал не работает?
-@receiver(pre_save, sender=Staff)
-def check_age(sender, instance, **kwargs):
-    if instance.vacations < 25:
-        print(f" Отпуск  не может быть меньше {instance.vacations}")
-    else:
-        print(f" Количество дней - {instance.vacations} соответствует ТК РБ ")
 
 
 @receiver(post_delete,  sender=Staff)

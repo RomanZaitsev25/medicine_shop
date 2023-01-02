@@ -74,8 +74,8 @@ class Medicine(models.Model):
         choices=DRUG_IMPLEMENTATION,
         default=False,
     )
-    amount_of_stock = models.IntegerField(default=0,
-                                           verbose_name='Количество на склад')
+    amount_on_stock = models.IntegerField(default=0,
+                                          verbose_name='Количество на складе')
 
     @property  # получение значения защищенного поля
     def price_increment(self):
@@ -160,4 +160,3 @@ class MedicineOrder(models.Model):
 
     class Meta:
         unique_together = [['medicine', 'order']]
-
