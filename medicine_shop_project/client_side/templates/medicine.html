@@ -2,7 +2,7 @@
 {% load register_customs %}
 
 {% block title %}
-Products
+Medicine
 {% endblock title %}
 
 {% block content %}
@@ -14,7 +14,7 @@ Products
 <input type="submit" value="Найти" />
 </form>
 
-{% if products %}
+{% if medicine %}
     <table>
         <tr>
             <td>
@@ -33,22 +33,22 @@ Products
                 <h3>Производитель</h3>
             </td>
         </tr>
-    {% for product in products %}
+    {% for medicine in medicine %}
         <tr>
             <td>
-                {{ product.trade_name }}
+                {{ medicine.trade_name }}
             </td>
             <td>
-                {{ product.international_name }}
+                {{ medicine.international_name }}
             </td>
             <td>
-                {{ product.structure|truncatewords:4 }}
+                {{ medicine.structure|truncatewords:4 }}
             </td>
             <td>
-                {{ product.price }}
+                {{ medicine.price }}
             </td>
             <td>
-                {{ product.manufacturer }}
+                {{ medicine.manufacturer }}
             </td>
         </tr>
 

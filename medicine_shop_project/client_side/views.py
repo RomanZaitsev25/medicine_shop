@@ -1,6 +1,8 @@
 from datetime import datetime
 
-from django.views.generic import ListView, TemplateView
+from django.contrib.auth.mixins import PermissionRequiredMixin
+from django.shortcuts import get_object_or_404
+from django.views.generic import ListView, TemplateView, DetailView
 
 from .filters import MedicineFilter
 from .models import Medicine
@@ -10,8 +12,8 @@ class MedicineListView(ListView):
     """List of products must be here. Use it properly."""
 
     model = Medicine
-    template_name = 'products.html'
-    context_object_name = 'products'
+    template_name = 'medicine.html'
+    context_object_name = 'medicine'
     paginate_by = 25
 
     def get_queryset(self):
@@ -32,4 +34,24 @@ class IndexView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['time_now'] = datetime.utcnow()  # добавим переменную текущей даты time_now
+        return context
+
+
+class ShowOneMedicineView(PermissionRequiredMixin, DetailView):
+    permission_required = ('my_farmasy.view_medicine')
+    model = Medicine
+    template_name = 'one_medicine.html'
+    context_object_name = 'one_medicine'
+
+
+    def get_object(self, **kwargs):
+        return get_object_or_404(Medicine, slug=self.kwargs['slug'])
+
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['title'] = 'Вторая страница'
+        context['time_now'] = datetime.utcnow()
+        context['is_admin'] = self.request.user.groups.filter(
+            name='local_admin').exists()
         return context

@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+
+{% block title %} Информация об одном лекарстве - {{medicine.trade_name}} {% endblock %}
+
+
+{% block content %}
+    <h2>{{title}}</h2>
+    <br>
+    <br>
+
+        <table>
+            <style >
+            TABLE {
+            width: 300px;
+            border: 1px solid black;
+           }
+            </style>
+
+        <tr>
+            <td>
+                <h3>Название лекарства </h3>  {{medicine.trade_name}}
+            </td>
+            <td>
+            <td>
+                <h3>Международное название </h3> {{medicine.international_name}}
+            </td>
+            <td>
+            <td>
+                <h3>Состав лекарства </h3>  {{medicine.structure | truncatewords:1}}
+            </td>
+            <td>
+            <td>
+                <h3>Стоимость лекарства </h3>  {{medicine.price}}
+            </td>
+            <td>
+            <td>
+                <h3>Производитель лекарства  </h3>  {{medicine.manufacturer}}
+            </td>
+            <td>
+                <h3>НДС лекарства  </h3>  {{medicine.price_increment}}
+            </td>
+        <tr>
+
+{% endblock %}
