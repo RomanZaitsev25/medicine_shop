@@ -13,7 +13,7 @@ class MedicineListView(ListView):
 
     model = Medicine
     template_name = 'medicine.html'
-    context_object_name = 'medicine'
+    context_object_name = 'medicines'
     paginate_by = 25
 
     def get_queryset(self):
@@ -37,20 +37,19 @@ class IndexView(TemplateView):
         return context
 
 
-class ShowOneMedicineView(PermissionRequiredMixin, DetailView):
-    permission_required = ('my_farmasy.view_medicine')
+class MedicineDetailView(PermissionRequiredMixin, DetailView):
+    permission_required = ('my_farmasy.view_medicine',)  # <--- тут запятую забыл после пермишена:
+    # у тебя разрешения передаются в виде кортежа, а не строки
     model = Medicine
     template_name = 'one_medicine.html'
-    context_object_name = 'one_medicine'
-
+    context_object_name = 'medicine'
 
     def get_object(self, **kwargs):
         return get_object_or_404(Medicine, slug=self.kwargs['slug'])
 
-
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['title'] = 'Вторая страница'
+        context['title'] = 'Детальная страница лекарства'
         context['time_now'] = datetime.utcnow()
         context['is_admin'] = self.request.user.groups.filter(
             name='local_admin').exists()

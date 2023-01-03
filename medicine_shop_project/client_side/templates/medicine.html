@@ -2,11 +2,11 @@
 {% load register_customs %}
 
 {% block title %}
-Medicine
+Medicines
 {% endblock title %}
 
 {% block content %}
-<h1>Все товары</h1>
+<h1>Все лекарства</h1>
 <h3>{{ time_now|date:'d M Y' }}</h3>
 
 <form action="" method="get">
@@ -14,7 +14,7 @@ Medicine
 <input type="submit" value="Найти" />
 </form>
 
-{% if medicine %}
+{% if medicines %}
     <table>
         <tr>
             <td>
@@ -33,10 +33,10 @@ Medicine
                 <h3>Производитель</h3>
             </td>
         </tr>
-    {% for medicine in medicine %}
+    {% for medicine in medicines %}
         <tr>
             <td>
-                {{ medicine.trade_name }}
+                <a href="{% url 'medicine_detail' medicine.slug %}">{{ medicine.trade_name }}</a>
             </td>
             <td>
                 {{ medicine.international_name }}
