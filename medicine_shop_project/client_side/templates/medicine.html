@@ -48,7 +48,9 @@ Medicines
                 {{ medicine.price }}
             </td>
             <td>
-                {{ medicine.manufacturer }}
+                {% for manufacturer in medicine.manufacturer.all %}
+                    {{ manufacturer }}
+                {% endfor %}
             </td>
         </tr>
 

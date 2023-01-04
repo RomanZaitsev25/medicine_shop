@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from django.contrib.auth.mixins import PermissionRequiredMixin
+# from django.contrib.auth.mixins import PermissionRequiredMixin
 from django.shortcuts import get_object_or_404
 from django.views.generic import ListView, TemplateView, DetailView
 
@@ -37,8 +37,8 @@ class IndexView(TemplateView):
         return context
 
 
-class MedicineDetailView(PermissionRequiredMixin, DetailView):
-    permission_required = ('my_farmasy.view_medicine',)  # <--- тут запятую забыл после пермишена:
+class MedicineDetailView(DetailView):
+    # permission_required = ('my_farmasy.view_medicine',)  # <--- тут запятую забыл после пермишена:
     # у тебя разрешения передаются в виде кортежа, а не строки
     model = Medicine
     template_name = 'one_medicine.html'
