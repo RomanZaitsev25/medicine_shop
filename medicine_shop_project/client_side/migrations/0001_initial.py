@@ -61,7 +61,7 @@ class Migration(migrations.Migration):
             name='MedicineOrder',
             fields=[
                 ('id', models.AutoField(primary_key=True, serialize=False, unique=True)),
-                ('amount', models.IntegerField(default=1)),
+                ('_amount', models.IntegerField(default=1)),
                 ('medicine', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='client_side.medicine')),
             ],
         ),

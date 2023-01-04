@@ -12,7 +12,7 @@ class MedicineForm(forms.ModelForm):
     class Meta:
         model = Medicine
         fields = ['trade_name', 'international_name', 'structure',
-                  'price', 'manufacturer', '_price_increment',
+                  'price', 'manufacturer', 'amount_on_stock', '_price_increment',
                   'with_recipe', 'slug']
         widgets = {
             'structure': forms.Textarea(attrs={'cols': 60, 'rows': 7}),

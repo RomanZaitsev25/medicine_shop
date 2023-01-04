@@ -1,3 +1,5 @@
+from django.core.exceptions import ValidationError
+from django.core.validators import MaxValueValidator
 from django.db import models
 from django.urls import reverse
 
@@ -68,7 +70,10 @@ class Medicine(models.Model):
         through='MedicineManufacturer'
     )
     slug = models.SlugField(default='', unique=True)
-    _price_increment = models.IntegerField(verbose_name='Наценка')
+    _price_increment = models.IntegerField(
+        verbose_name='Наценка',
+        validators=[MaxValueValidator(10, 'Негодно к продаже!')],
+    )
     with_recipe = models.BooleanField(
         verbose_name='По рецепту',
         choices=DRUG_IMPLEMENTATION,
@@ -150,10 +155,27 @@ class MedicineOrder(models.Model):
     id = models.AutoField(primary_key=True, unique=True)
     medicine = models.ForeignKey(Medicine, on_delete=models.CASCADE)
     order = models.ForeignKey(Order, on_delete=models.CASCADE)
-    amount = models.IntegerField(default=1)
+    _amount = models.IntegerField(default=1)
 
     def get_total_medicine_cost(self):
-        return self.medicine.price * self.amount
+        return self.medicine.price * self._amount
+
+    @property
+    def amount(self):
+        return self._amount
+
+    @amount.setter
+    def amount(self, value):
+        medicine = Medicine.objects.get(id=self.medicine.id)
+        if value > medicine.amount_on_stock:
+            raise Exception("На складе отсутствует данное количество товара!")
+        else:
+            self._amount = value
+            self.save()
+
+    def clean(self):
+        if self._amount > self.medicine.amount_on_stock:
+            raise ValidationError("На складе отсутствует данное количество товара!")
 
     def __str__(self):
         return f"{self.medicine} - {self.order}"
