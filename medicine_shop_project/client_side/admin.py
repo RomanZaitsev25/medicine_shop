@@ -31,17 +31,24 @@ class OrderAdmin(admin.ModelAdmin):
 @admin.register(Medicine)
 class MedicineAdmin(admin.ModelAdmin):
     inlines = (MedicineManufacturerInline,)
-    list_display = ('trade_name', 'price', 'with_recipe')
+    list_display = ('trade_name', 'price', 'amount_on_stock', 'with_recipe')
     list_filter = ('trade_name', 'price', 'with_recipe')
     search_fields = ('trade_name', 'price', 'with_recipe')
     form = MedicineForm
     save_on_top = True
     fieldsets = (
         ('Общие данные', {
-            'fields': ('trade_name', 'international_name', 'structure')
+            'fields': (
+                'trade_name',
+                'international_name',
+                'price',
+                'structure',
+                'amount_on_stock',
+                'with_recipe',
+            )
         }),
         ('Дополнительные данные', {
-            'fields': ('price', '_price_increment', 'with_recipe', 'slug')
+            'fields': ('_price_increment',  'slug')
         }),
     )
 

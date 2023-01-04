@@ -27,7 +27,7 @@
             </td>
             <td>
             <td>
-                <h3>Состав лекарства </h3>  {{medicine.structure | truncatewords:1}}
+                <h3>Состав лекарства </h3>  {{medicine.structure}}
             </td>
             <td>
             <td>
@@ -35,7 +35,9 @@
             </td>
             <td>
             <td>
-                <h3>Производитель лекарства  </h3>  {{medicine.manufacturer}}
+                <h3>Производитель лекарства  </h3>  {% for manufacturer in medicine.manufacturer.all %}
+                                                        {{ manufacturer }}
+                                                    {% endfor %}
             </td>
             <td>
                 <h3>НДС лекарства  </h3>  {{medicine.price_increment}}
