@@ -21,9 +21,6 @@ Medicines
                 <h3>Название</h3>
             </td>
             <td>
-                <h3>Международное название</h3>
-            </td>
-            <td>
                 <h3>Состав</h3>
             </td>
             <td>
@@ -38,14 +35,12 @@ Medicines
             <td>
                 <a href="{% url 'medicine_detail' medicine.slug %}">{{ medicine.trade_name }}</a>
             </td>
+
             <td>
-                {{ medicine.international_name }}
+                {{ medicine.structure|truncatewords:2 }}
             </td>
             <td>
-                {{ medicine.structure|truncatewords:4 }}
-            </td>
-            <td>
-                {{ medicine.price }}
+                {{ medicine.price }} BYN
             </td>
             <td>
                 {% for manufacturer in medicine.manufacturer.all %}

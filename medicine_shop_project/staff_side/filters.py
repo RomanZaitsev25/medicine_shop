@@ -8,12 +8,13 @@ class StaffFilter(FilterSet):
     class Meta:
         model = Staff
         fields = {
-            'name': ['icontains'],
-            'age':  [
-                'lt',
-                'gt',
+            'first_name': ['icontains'],
+            'second_name': ['icontains'],
+            'date_of_birth':  [
+                'lte',
+                'gte',
             ],
-            'salary': [
+            '_salary': [
                 'lt',
                 'gt',
             ],
