@@ -168,14 +168,18 @@ class MedicineOrder(models.Model):
     def amount(self, value):
         medicine = Medicine.objects.get(id=self.medicine.id)
         if value > medicine.amount_on_stock:
-            raise Exception("На складе отсутствует данное количество товара!")
+            raise Exception("На складе отсутствует данное количество товара! "
+                            f"В данный момент на складе {medicine.amount_on_stock} ед.")
         else:
             self._amount = value
             self.save()
 
     def clean(self):
         if self._amount > self.medicine.amount_on_stock:
-            raise ValidationError("На складе отсутствует данное количество товара!")
+            raise ValidationError(
+                "На складе отсутствует данное количество товара! "
+                f"В данный момент на складе {self.medicine.amount_on_stock} ед."
+            )
 
     def __str__(self):
         return f"{self.medicine} - {self.order}"
