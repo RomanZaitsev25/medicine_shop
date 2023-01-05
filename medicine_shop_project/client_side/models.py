@@ -75,7 +75,7 @@ class Medicine(models.Model):
         validators=[MaxValueValidator(10, 'Негодно к продаже!')],
     )
     with_recipe = models.BooleanField(
-        verbose_name='По рецепту',
+        verbose_name='Условия отпуска',
         choices=DRUG_IMPLEMENTATION,
         default=False,
     )

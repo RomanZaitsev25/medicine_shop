@@ -25,6 +25,14 @@
             <h1 class="green"> {{medicine.price}} BYN</h1>
         </div>
 
+        <div class="detail-set"><h1>Условия отпуска: </h1>
+            {% if medicine.with_recipe is True %}
+                <h1 class="green"> По рецепту врача </h1>
+            {% else %}
+                <h1 class="green"> Без рецепта </h1>
+            {% endif %}
+        </div>
+
         <div class="detail-set"><h1>Производитель лекарства:  </h1>
             {% for manufacturer in medicine.manufacturer.all %}
                <h1 class="green"> {{ manufacturer }}</h1>
