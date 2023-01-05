@@ -6,75 +6,84 @@ Medicines
 {% endblock title %}
 
 {% block content %}
-<h1>Все лекарства</h1>
-<h3>{{ time_now|date:'d M Y' }}</h3>
+<div class="medicine-title">Все лекарства</div>
 
 <form action="" method="get">
-    {{ filterset.form.as_p }}
-<input type="submit" value="Найти" />
+   <div class="filter-set">{{ filterset.form.as_p }}</div>
+    <div style="display: flex; justify-content: space-evenly;">
+        <input type="submit" value="Найти" />
+    </div>
 </form>
 
-{% if medicines %}
-    <table>
-        <tr>
-            <td>
-                <h3>Название</h3>
-            </td>
-            <td>
-                <h3>Состав</h3>
-            </td>
-            <td>
-                <h3>Цена</h3>
-            </td>
-            <td>
-                <h3>Производитель</h3>
-            </td>
-        </tr>
-    {% for medicine in medicines %}
-        <tr>
-            <td>
-                <a href="{% url 'medicine_detail' medicine.slug %}">{{ medicine.trade_name }}</a>
-            </td>
+<div id="featured-wrapper">
+    <div id="featured" class="extra2 margin-btm container">
 
-            <td>
-                {{ medicine.structure|truncatewords:2 }}
-            </td>
-            <td>
-                {{ medicine.price }} BYN
-            </td>
-            <td>
-                {% for manufacturer in medicine.manufacturer.all %}
-                    {{ manufacturer }}
-                {% endfor %}
-            </td>
-        </tr>
+        {% if medicines %}
+            <table>
+                <thead>
+                <tr>
+                    <td>
+                        <h2>Название</h2>
+                    </td>
+                    <td>
+                        <h2>Состав</h2>
+                    </td>
+                    <td>
+                        <h2>Цена</h2>
+                    </td>
+                    <td>
+                        <h2>Производитель</h2>
+                    </td>
+                </tr>
+                </thead>
+                <tbody>
+                    {% for medicine in medicines %}
+                        <tr>
+                            <td>
+                                <a href="{% url 'medicine_detail' medicine.slug %}">{{ medicine.trade_name }}</a>
+                            </td>
+                            <td>
+                                {{ medicine.structure|truncatewords:2 }}
+                            </td>
+                            <td>
+                                {{ medicine.price }} BYN
+                            </td>
+                            <td>
+                                {% for manufacturer in medicine.manufacturer.all %}
+                                    {{ manufacturer }}
+                                {% endfor %}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <h2>Товаров нет!</h2>
+        {% endif %}
 
-    {% endfor %}
-    </table>
-{% else %}
-    <h2>Товаров нет!</h2>
-{% endif %}
+        {# Добавляем пагинацию на страницу #}
+        <div class="pagination">
+           {# Информация о предыдущих страницах #}
+           {% if page_obj.has_previous %}
+               {# Для каждой ссылки пагинации указываем обработку через новый тег #}
+               <a href="?{% url_replace page=1 %}">1</a>
+               {% if page_obj.previous_page_number != 1 %}
+                   ...
+                   <a href="?{% url_replace page=page_obj.previous_page_number %}">{{ page_obj.previous_page_number }}</a>
+               {% endif %}
+           {% endif %}
 
-{# Добавляем пагинацию на страницу #}
+           <a href="?{% url_replace page=page_obj.number %}" class="active">{{ page_obj.number }}</a>
 
-   {# Информация о предыдущих страницах #}
-   {% if page_obj.has_previous %}
-       {# Для каждой ссылки пагинации указываем обработку через новый тег #}
-       <a href="?{% url_replace page=1 %}">1</a>
-       {% if page_obj.previous_page_number != 1 %}
-           ...
-           <a href="?{% url_replace page=page_obj.previous_page_number %}">{{ page_obj.previous_page_number }}</a>
-       {% endif %}
-   {% endif %}
-
-   {{ page_obj.number }}
-
-   {% if page_obj.has_next %}
-       <a href="?{% url_replace page=page_obj.next_page_number %}">{{ page_obj.next_page_number }}</a>
-       {% if paginator.num_pages != page_obj.next_page_number %}
-           ...
-           <a href="?{% url_replace page=page_obj.paginator.num_pages %}">{{ page_obj.paginator.num_pages }}</a>
-       {% endif %}
-   {% endif %}
+           {% if page_obj.has_next %}
+               <a href="?{% url_replace page=page_obj.next_page_number %}">{{ page_obj.next_page_number }}</a>
+               {% if paginator.num_pages != page_obj.next_page_number %}
+                   ...
+                   <a href="?{% url_replace page=page_obj.paginator.num_pages %}">{{ page_obj.paginator.num_pages }}</a>
+               {% endif %}
+           {% endif %}
+        </div>
+    </div>
+</div>
 
 {% endblock content %}

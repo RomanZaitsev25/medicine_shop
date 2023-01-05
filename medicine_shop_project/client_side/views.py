@@ -25,6 +25,7 @@ class MedicineListView(ListView):
         context = super().get_context_data(**kwargs)
         context['filterset'] = self.filterset
         context['time_now'] = datetime.utcnow()
+        context['title'] = 'medicines'
         return context
 
 
@@ -33,7 +34,8 @@ class IndexView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['time_now'] = datetime.utcnow()  # добавим переменную текущей даты time_now
+        context['time_now'] = datetime.utcnow()
+        context['title'] = 'index'
         return context
 
 

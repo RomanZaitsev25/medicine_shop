@@ -1,47 +1,36 @@
 {% extends 'base.html' %}
 
 
-{% block title %} Информация о лекарстве - {{medicine.trade_name}} {% endblock %}
+{% block title %} {{medicine.trade_name}} {% endblock %}
 
 
 {% block content %}
-    <h2>{{title}}</h2>
-    <br>
-    <br>
+<div class="medicine-title">{{medicine.trade_name}}</div>
+<div id="featured-wrapper">
+    <div id="featured" class="extra2 margin-btm container">
 
-        <table>
-            <style >
-            TABLE {
-            width: 300px;
-            border: 1px solid black;
-           }
-            </style>
+        <div class="detail-set"><h1>Название лекарства: </h1>
+            <h1 class="green"> {{medicine.trade_name}} </h1>
+        </div>
 
-        <tr>
-            <td>
-                <h3>Название лекарства </h3>  {{medicine.trade_name}}
-            </td>
-            <td>
-            <td>
-                <h3>Международное название </h3> {{medicine.international_name}}
-            </td>
-            <td>
-            <td>
-                <h3>Состав лекарства </h3>  {{medicine.structure}}
-            </td>
-            <td>
-            <td>
-                <h3>Стоимость лекарства </h3>  {{medicine.price}}
-            </td>
-            <td>
-            <td>
-                <h3>Производитель лекарства  </h3>  {% for manufacturer in medicine.manufacturer.all %}
-                                                        {{ manufacturer }}
-                                                    {% endfor %}
-            </td>
-            <td>
-                <h3>НДС лекарства  </h3>  {{medicine.price_increment}}
-            </td>
-        <tr>
+        <div class="detail-set"><h1>Международное название: </h1>
+            <h1 class="green"> {{medicine.international_name}}</h1>
+        </div>
 
+        <div class="detail-set"><h1>Состав лекарства: </h1>
+            <h1 class="green"> {{medicine.structure}}</h1>
+        </div>
+
+        <div class="detail-set"><h1>Стоимость лекарства: </h1>
+            <h1 class="green"> {{medicine.price}} BYN</h1>
+        </div>
+
+        <div class="detail-set"><h1>Производитель лекарства:  </h1>
+            {% for manufacturer in medicine.manufacturer.all %}
+               <h1 class="green"> {{ manufacturer }}</h1>
+            {% endfor %}
+        </div>
+
+    </div>
+</div>
 {% endblock %}

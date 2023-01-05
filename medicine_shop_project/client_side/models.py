@@ -166,10 +166,9 @@ class MedicineOrder(models.Model):
 
     @amount.setter
     def amount(self, value):
-        medicine = Medicine.objects.get(id=self.medicine.id)
-        if value > medicine.amount_on_stock:
+        if value > self.medicine.amount_on_stock:
             raise Exception("На складе отсутствует данное количество товара! "
-                            f"В данный момент на складе {medicine.amount_on_stock} ед.")
+                            f"В данный момент на складе {self.medicine.amount_on_stock} ед.")
         else:
             self._amount = value
             self.save()
