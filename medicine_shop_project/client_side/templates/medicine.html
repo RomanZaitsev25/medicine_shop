@@ -53,6 +53,13 @@ Medicines
                                     {{ manufacturer }}
                                 {% endfor %}
                             </td>
+                            <a href="{% url 'update_medicine' medicine.slug %}">
+                                <button class="add in class">Добавить в
+                                    корзину
+                                </button>
+                            </a>
+
+
                         </tr>
                     {% endfor %}
                 </tbody>

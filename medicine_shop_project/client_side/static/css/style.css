@@ -8,11 +8,11 @@ body
 {
 	margin: 0px;
 	padding: 0px;
-	background: #2b2b2b;
+	background: #486874;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 11pt;
 	font-weight: 300;
-	color: #6c6c6c
+	color: #91058c;
 }
 
 h1, h2, h3
@@ -366,7 +366,7 @@ ul.contact li a.icon-rss:before
 	
 #header-wrapper
 {
-	background: #2b2b2b;
+	background: #486874;
 }
 
 #header
@@ -409,12 +409,12 @@ ul.contact li a.icon-rss:before
 #logo a
 {
 	text-decoration: none;
-	color: #FFF;
+	color: #a70e32;
 }
 
 #logo .fa
 {
-	color: #8dc63f;
+	color: #8ae70c;
 }
 
 #logo .fa:after
@@ -466,7 +466,7 @@ ul.contact li a.icon-rss:before
 
 #menu .current_page_item a
 {
-	color: #4CAF50;
+	color: #8ae70c;
 }
 
 /*********************************************************************************/

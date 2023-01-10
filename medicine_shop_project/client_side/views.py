@@ -2,9 +2,10 @@ from datetime import datetime
 
 # from django.contrib.auth.mixins import PermissionRequiredMixin
 from django.shortcuts import get_object_or_404
-from django.views.generic import ListView, TemplateView, DetailView
+from django.views.generic import ListView, TemplateView, DetailView, UpdateView
 
 from .filters import MedicineFilter
+from .forms import MedicineForm
 from .models import Medicine
 
 
@@ -14,7 +15,7 @@ class MedicineListView(ListView):
     model = Medicine
     template_name = 'medicine.html'
     context_object_name = 'medicines'
-    paginate_by = 25
+    paginate_by = 5
 
     def get_queryset(self):
         queryset = super().get_queryset()
@@ -56,3 +57,9 @@ class MedicineDetailView(DetailView):
         context['is_admin'] = self.request.user.groups.filter(
             name='local_admin').exists()
         return context
+
+
+class MedicineUpdate(UpdateView):
+    model = Medicine
+    template_name = 'medicine.html'
+    form_class = MedicineForm

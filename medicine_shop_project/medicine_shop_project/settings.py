@@ -10,9 +10,9 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
+import os
 from pathlib import Path
 
-import os
 from dotenv import dotenv_values
 
 dotenv_path = os.path.join(
@@ -20,7 +20,7 @@ dotenv_path = os.path.join(
 
 config = dotenv_values(dotenv_path)
 
-# CART_SESSION_ID = 'cart'
+CART_SESSION_ID = 'cart'
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -52,6 +52,14 @@ INSTALLED_APPS = [
     'django_filters',
     'staff_side.apps.StaffSideConfig',
     'client_side.apps.ClientSideConfig',
+    'accounts',
+    'cart.apps.CartConfig',
+    'allauth',  # само приложение авторизации
+    'allauth.account',  # модель и её формы для аккаунтов
+    'allauth.socialaccount',  # модель и её формы для аккаунтов в соц сетях
+    'allauth.socialaccount.providers.yandex',
+    # подключение яндекс сервисов авторизации
+    'allauth.socialaccount.providers.vk',
 ]
 
 MIDDLEWARE = [
@@ -62,8 +70,17 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.template.context_processors.request',
+
 ]
 
+SITE_ID = 1
+
+# БУдем использовать внешний сторонний сервис авторизации и регистрации
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
 ROOT_URLCONF = 'medicine_shop_project.urls'
 
 TEMPLATES = [
@@ -74,9 +91,10 @@ TEMPLATES = [
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
-                'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                # обрабатывает шаблоны в нашем приложении
+                'django.template.context_processors.request',
             ],
         },
     },
@@ -92,6 +110,19 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+
+SOCIALACCOUNT_PROVIDERS = {
+    'google': {
+        # For each OAuth based provider, either add a ``SocialApp``
+        # (``socialaccount`` app) containing the required client
+        # credentials, or list them here:
+        'APP': {
+            'client_id': '123',
+            'secret': '456',
+            'key': ''
+        }
     }
 }
 
@@ -114,6 +145,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "client_side/static"),
+                    os.path.join(BASE_DIR, "staff_side/static"),
+                ]
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
