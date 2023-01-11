@@ -1,11 +1,2719 @@
 [
 {
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2022-12-30T04:36:47.522Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "Russian Federation",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2022-12-30T04:36:50.914Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "Republic of Belarus",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2022-12-30T04:41:42.468Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "БелМедПрепараты - Republic of Belarus",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2022-12-30T04:42:06.085Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "Лоратодин",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"medicine manufacturer\", \"object\": \"\\u041b\\u043e\\u0440\\u0430\\u0442\\u043e\\u0434\\u0438\\u043d - \\u0411\\u0435\\u043b\\u041c\\u0435\\u0434\\u041f\\u0440\\u0435\\u043f\\u0430\\u0440\\u0430\\u0442\\u044b - Republic of Belarus\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2022-12-30T04:44:49.995Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "Лоратодин",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2022-12-30T04:45:18.833Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "Allercaps",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"medicine manufacturer\", \"object\": \"Allercaps - \\u0411\\u0435\\u043b\\u041c\\u0435\\u0434\\u041f\\u0440\\u0435\\u043f\\u0430\\u0440\\u0430\\u0442\\u044b - Republic of Belarus\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2022-12-30T05:00:22.982Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "2022-12-30 04:59:45+00:00 - 2022-12-30 05:00:21+00:00 : 0.0 ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2022-12-30T05:01:54.968Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "2022-12-30 04:59:45+00:00 - 2022-12-30 05:00:21+00:00 : 0.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"medicine order\", \"object\": \"Allercaps - 2022-12-30 04:59:45+00:00 - 2022-12-30 05:00:21+00:00 : 0.0 \"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2022-12-30T05:02:17.196Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "2022-12-30 04:59:45+00:00 - 2022-12-30 05:00:21+00:00 : 0.0 ",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2022-12-30T05:02:33.592Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "2",
+    "object_repr": "2022-12-30 05:02:28+00:00 - 2022-12-30 05:02:32+00:00 : 0.0 ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"medicine order\", \"object\": \"Allercaps - 2022-12-30 05:02:28+00:00 - 2022-12-30 05:02:32+00:00 : 0.0 \"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2022-12-30T05:18:08.028Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "2",
+    "object_repr": "2022-12-30 05:02:28+00:00 - 2022-12-30 05:02:32+00:00 : 0.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"medicine order\", \"object\": \"Allercaps - 2022-12-30 05:02:28+00:00 - 2022-12-30 05:02:32+00:00 : 0.0 \", \"fields\": [\"Amount\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2022-12-30T05:20:33.580Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "2",
+    "object_repr": "2022-12-30 05:02:28+00:00 - 2022-12-30 05:02:32+00:00 : 0.0 ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2022-12-30T05:20:48.506Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "2",
+    "object_repr": "2022-12-30 05:02:28+00:00 - 2022-12-30 05:02:32+00:00 : 0.0 ",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2022-12-30T05:21:02.531Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-30 05:20:58+00:00 : 0.0 ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"medicine order\", \"object\": \"Allercaps - 2022-12-30 05:20:57+00:00 - 2022-12-30 05:20:58+00:00 : 0.0 \"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2022-12-30T05:40:27.053Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-30 05:20:58+00:00 : 0.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"medicine order\", \"object\": \"Allercaps - 2022-12-30 05:20:57+00:00 - 2022-12-30 05:20:58+00:00 : 0.0 \", \"fields\": [\"Amount\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2022-12-30T05:46:13.021Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-30 05:20:58+00:00 : 0.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"medicine order\", \"object\": \"Allercaps - 2022-12-30 05:20:57+00:00 - 2022-12-30 05:20:58+00:00 : 0.0 \", \"fields\": [\"Amount\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2022-12-30T05:50:31.140Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-30 05:20:58+00:00 : 0.0 ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2022-12-30T05:57:42.248Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-30 05:20:58+00:00 : 10.0 ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2022-12-30T05:57:47.672Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-30 05:20:58+00:00 : 10.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"medicine order\", \"object\": \"Allercaps - 2022-12-30 05:20:57+00:00 - 2022-12-30 05:20:58+00:00 : 10.0 \", \"fields\": [\"Amount\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2022-12-30T05:58:31.893Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-30 05:20:58+00:00 : 15.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"medicine order\", \"object\": \"Allercaps - 2022-12-30 05:20:57+00:00 - 2022-12-30 05:20:58+00:00 : 15.0 \", \"fields\": [\"Amount\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2022-12-30T05:59:28.483Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-30 05:20:58+00:00 : 10.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"medicine order\", \"object\": \"Allercaps - 2022-12-30 05:20:57+00:00 - 2022-12-30 05:20:58+00:00 : 10.0 \", \"fields\": [\"Amount\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2022-12-30T06:04:22.471Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-30 05:20:58+00:00 : 5.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"medicine order\", \"object\": \"Allercaps - 2022-12-30 05:20:57+00:00 - 2022-12-30 05:20:58+00:00 : 5.0 \", \"fields\": [\"Amount\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2022-12-30T06:04:27.173Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-30 05:20:58+00:00 : 15.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"medicine order\", \"object\": \"Allercaps - 2022-12-30 05:20:57+00:00 - 2022-12-30 05:20:58+00:00 : 15.0 \", \"fields\": [\"Amount\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2022-12-30T06:05:44.803Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-30 05:20:58+00:00 : 30.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"medicine order\", \"object\": \"\\u041b\\u043e\\u0440\\u0430\\u0442\\u043e\\u0434\\u0438\\u043d - 2022-12-30 05:20:57+00:00 - 2022-12-30 05:20:58+00:00 : 30.0 \"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2022-12-30T06:20:22.701Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "4",
+    "object_repr": "2022-12-30 06:20:22.699871+00:00 - 2022-12-30 07:19:23+00:00 : 0.0 ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"medicine order\", \"object\": \"Allercaps - 2022-12-30 06:20:22.699871+00:00 - 2022-12-30 07:19:23+00:00 : 0.0 \"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2022-12-30T06:21:07.541Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "4",
+    "object_repr": "2022-12-30 06:20:22.699871+00:00 - 2022-12-30 07:19:23+00:00 : 5.0 ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2022-12-30T06:21:17.868Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "4",
+    "object_repr": "2022-12-30 06:20:22.699871+00:00 - 2022-12-30 07:19:23+00:00 : 10.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"medicine order\", \"object\": \"Allercaps - 2022-12-30 06:20:22.699871+00:00 - 2022-12-30 07:19:23+00:00 : 10.0 \", \"fields\": [\"Amount\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2022-12-30T06:24:18.442Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "5",
+    "object_repr": "2022-12-30 06:24:18.440826+00:00 - 2022-12-31 06:24:17+00:00 : 0.0 ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"medicine order\", \"object\": \"\\u041b\\u043e\\u0440\\u0430\\u0442\\u043e\\u0434\\u0438\\u043d - 2022-12-30 06:24:18.440826+00:00 - 2022-12-31 06:24:17+00:00 : 0.0 \"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2022-12-30T06:24:26.619Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "4",
+    "object_repr": "2022-12-30 06:20:22.699871+00:00 - 2022-12-30 07:19:23+00:00 : 10.0 ",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2022-12-30T06:24:29.649Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "5",
+    "object_repr": "2022-12-30 06:24:18.440826+00:00 - 2022-12-31 06:24:17+00:00 : 0.0 ",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2022-12-30T06:25:04.063Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-31 05:20:58+00:00 : 65.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0432\\u044b\\u0434\\u0430\\u0447\\u0438 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2022-12-30T06:26:13.000Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "6",
+    "object_repr": "2022-12-30 06:26:12.997960+00:00 - 2022-12-31 06:25:24+00:00 : 0.0 ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"medicine order\", \"object\": \"Allercaps - 2022-12-30 06:26:12.997960+00:00 - 2022-12-31 06:25:24+00:00 : 0.0 \"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2022-12-30T06:26:40.633Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "6",
+    "object_repr": "2022-12-30 06:26:12.997960+00:00 - 2022-12-31 06:25:24+00:00 : 0.0 ",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2022-12-30T06:37:12.977Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-31 05:20:58+00:00 : 100.0 ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2022-12-30T06:37:21.394Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-31 05:20:58+00:00 : 135.0 ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2022-12-30T06:37:25.866Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-31 06:37:24+00:00 : 170.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0432\\u044b\\u0434\\u0430\\u0447\\u0438 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2022-12-30T06:37:31.924Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-31 06:37:30+00:00 : 205.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0432\\u044b\\u0434\\u0430\\u0447\\u0438 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2022-12-30T06:38:08.230Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-31 06:37:30+00:00 : 35.0 ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2022-12-30T06:38:12.764Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-31 06:38:11+00:00 : 35.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0432\\u044b\\u0434\\u0430\\u0447\\u0438 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2022-12-30T06:39:03.411Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-31 06:38:11+00:00 : 35.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"medicine order\", \"object\": \"\\u041b\\u043e\\u0440\\u0430\\u0442\\u043e\\u0434\\u0438\\u043d - 2022-12-30 05:20:57+00:00 - 2022-12-31 06:38:11+00:00 : 35.0 \", \"fields\": [\"Amount\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2022-12-30T06:39:10.581Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-31 06:38:11+00:00 : 39.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"medicine order\", \"object\": \"Allercaps - 2022-12-30 05:20:57+00:00 - 2022-12-31 06:38:11+00:00 : 39.0 \", \"fields\": [\"Amount\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2022-12-30T06:39:16.981Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-31 06:38:11+00:00 : 44.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"medicine order\", \"object\": \"\\u041b\\u043e\\u0440\\u0430\\u0442\\u043e\\u0434\\u0438\\u043d - 2022-12-30 05:20:57+00:00 - 2022-12-31 06:38:11+00:00 : 44.0 \", \"fields\": [\"Amount\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2022-12-30T06:40:08.689Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-31 06:38:11+00:00 : 24.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"medicine order\", \"object\": \"Allercaps - 2022-12-30 05:20:57+00:00 - 2022-12-31 06:38:11+00:00 : 24.0 \", \"fields\": [\"Amount\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2022-12-30T06:40:14.615Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-31 06:38:11+00:00 : 9.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"medicine order\", \"object\": \"\\u041b\\u043e\\u0440\\u0430\\u0442\\u043e\\u0434\\u0438\\u043d - 2022-12-30 05:20:57+00:00 - 2022-12-31 06:38:11+00:00 : 9.0 \", \"fields\": [\"Amount\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2022-12-30T06:40:20.991Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-31 06:38:11+00:00 : 13.0 ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2022-12-30T06:40:23.241Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-31 06:38:11+00:00 : 13.0 ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2022-12-30T06:40:25.689Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-31 06:38:11+00:00 : 13.0 ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2022-12-30T06:40:30.104Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-31 06:38:11+00:00 : 13.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"medicine order\", \"object\": \"\\u041b\\u043e\\u0440\\u0430\\u0442\\u043e\\u0434\\u0438\\u043d - 2022-12-30 05:20:57+00:00 - 2022-12-31 06:38:11+00:00 : 13.0 \", \"fields\": [\"Amount\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2022-12-30T06:40:32.319Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-31 06:38:11+00:00 : 17.0 ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2022-12-30T06:41:02.295Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-31 06:38:11+00:00 : 17.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"medicine order\", \"object\": \"Allercaps - 2022-12-30 05:20:57+00:00 - 2022-12-31 06:38:11+00:00 : 17.0 \"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2022-12-30T06:41:06.458Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-31 06:38:11+00:00 : 12.0 ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2022-12-30T06:41:09.123Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-31 06:38:11+00:00 : 12.0 ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2022-12-30T06:41:14.925Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-31 06:38:11+00:00 : 12.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"medicine order\", \"object\": \"Allercaps - 2022-12-30 05:20:57+00:00 - 2022-12-31 06:38:11+00:00 : 12.0 \"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2022-12-30T06:41:20.973Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "2022-12-30 05:20:57+00:00 - 2022-12-31 06:38:11+00:00 : 12.0 ",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2022-12-30T06:41:34.366Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "7",
+    "object_repr": "2022-12-30 06:41:34.363301+00:00 - 2022-12-31 06:41:24+00:00 : 0 ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"medicine order\", \"object\": \"Allercaps - 2022-12-30 06:41:34.363301+00:00 - 2022-12-31 06:41:24+00:00 : 0 \"}}, {\"added\": {\"name\": \"medicine order\", \"object\": \"\\u041b\\u043e\\u0440\\u0430\\u0442\\u043e\\u0434\\u0438\\u043d - 2022-12-30 06:41:34.363301+00:00 - 2022-12-31 06:41:24+00:00 : 0 \"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2022-12-30T06:41:37.957Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "7",
+    "object_repr": "2022-12-30 06:41:34.363301+00:00 - 2022-12-31 06:41:24+00:00 : 19.0 ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2022-12-30T06:42:13.223Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "7",
+    "object_repr": "2022-12-30 06:41:34.363301+00:00 - 2022-12-31 06:41:24+00:00 : 19.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"medicine order\", \"object\": \"\\u041b\\u043e\\u0440\\u0430\\u0442\\u043e\\u0434\\u0438\\u043d - 2022-12-30 06:41:34.363301+00:00 - 2022-12-31 06:41:24+00:00 : 19.0 \", \"fields\": [\"Amount\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2022-12-30T06:42:18.001Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "7",
+    "object_repr": "2022-12-30 06:41:34.363301+00:00 - 2022-12-31 06:41:24+00:00 : 23.0 ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2022-12-30T06:42:53.567Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "7",
+    "object_repr": "2022-12-30 06:41:34.363301+00:00 - 2022-12-31 06:41:24+00:00 : 46.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"medicine order\", \"object\": \"\\u041b\\u043e\\u0440\\u0430\\u0442\\u043e\\u0434\\u0438\\u043d - 2022-12-30 06:41:34.363301+00:00 - 2022-12-31 06:41:24+00:00 : 46.0 \", \"fields\": [\"Amount\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2022-12-30T06:43:01.124Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "7",
+    "object_repr": "2022-12-30 06:41:34.363301+00:00 - 2022-12-31 06:41:24+00:00 : 65.0 ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2022-12-30T06:43:56.694Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "7",
+    "object_repr": "2022-12-30 06:41:34.363301+00:00 - 2022-12-31 06:41:24+00:00 : 19.0 ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2022-12-30T06:44:00.773Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "7",
+    "object_repr": "2022-12-30 06:41:34.363301+00:00 - 2022-12-31 06:41:24+00:00 : 19.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"medicine order\", \"object\": \"\\u041b\\u043e\\u0440\\u0430\\u0442\\u043e\\u0434\\u0438\\u043d - 2022-12-30 06:41:34.363301+00:00 - 2022-12-31 06:41:24+00:00 : 19.0 \", \"fields\": [\"Amount\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2022-12-30T06:44:07.263Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "7",
+    "object_repr": "2022-12-30 06:41:34.363301+00:00 - 2022-12-31 06:41:24+00:00 : 23.0 ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2022-12-30T06:44:34.646Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "8",
+    "object_repr": "2022-12-30 06:44:34.644774+00:00 - 2022-12-30 07:44:26+00:00 : 0 ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"medicine order\", \"object\": \"Allercaps - 2022-12-30 06:44:34.644774+00:00 - 2022-12-30 07:44:26+00:00 : 0 \"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2022-12-30T06:44:39.208Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "8",
+    "object_repr": "2022-12-30 06:44:34.644774+00:00 - 2022-12-30 07:44:26+00:00 : 5.0 ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2022-12-30T06:45:19.240Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "8",
+    "object_repr": "2022-12-30 06:44:34.644774+00:00 - 2022-12-30 07:44:26+00:00 : 5.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"medicine order\", \"object\": \"Allercaps - 2022-12-30 06:44:34.644774+00:00 - 2022-12-30 07:44:26+00:00 : 5.0 \", \"fields\": [\"Amount\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2022-12-30T06:45:23.126Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "8",
+    "object_repr": "2022-12-30 06:44:34.644774+00:00 - 2022-12-30 07:44:26+00:00 : 10.0 ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2022-12-30T07:05:18.789Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "8",
+    "object_repr": "2022-12-30 06:44:34.644774+00:00 - 2022-12-30 07:44:26+00:00 : 10.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"medicine order\", \"object\": \"Allercaps - 2022-12-30 06:44:34.644774+00:00 - 2022-12-30 07:44:26+00:00 : 10.0 \", \"fields\": [\"Amount\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2022-12-30T07:05:23.997Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "8",
+    "object_repr": "2022-12-30 06:44:34.644774+00:00 - 2022-12-30 07:44:26+00:00 : 15.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"medicine order\", \"object\": \"Allercaps - 2022-12-30 06:44:34.644774+00:00 - 2022-12-30 07:44:26+00:00 : 15.0 \", \"fields\": [\"Amount\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2022-12-30T07:05:27.802Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "7",
+    "object_repr": "2022-12-30 06:41:34.363301+00:00 - 2022-12-31 06:41:24+00:00 : 23.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"medicine order\", \"object\": \"\\u041b\\u043e\\u0440\\u0430\\u0442\\u043e\\u0434\\u0438\\u043d - 2022-12-30 06:41:34.363301+00:00 - 2022-12-31 06:41:24+00:00 : 23.0 \", \"fields\": [\"Amount\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2022-12-30T07:05:39.517Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "9",
+    "object_repr": "2022-12-30 07:05:39.502262+00:00 - 2022-12-30 08:05:34+00:00 : 0 ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"medicine order\", \"object\": \"Allercaps - 2022-12-30 07:05:39.502262+00:00 - 2022-12-30 08:05:34+00:00 : 0 \"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2022-12-30T07:05:46.503Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "9",
+    "object_repr": "2022-12-30 07:05:39.502262+00:00 - 2022-12-30 08:05:34+00:00 : 5.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"medicine order\", \"object\": \"Allercaps - 2022-12-30 07:05:39.502262+00:00 - 2022-12-30 08:05:34+00:00 : 5.0 \", \"fields\": [\"Amount\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2022-12-30T07:06:53.039Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "8",
+    "object_repr": "2022-12-30 06:44:34.644774+00:00 - 2022-12-30 07:44:26+00:00 : 10.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"medicine order\", \"object\": \"\\u041b\\u043e\\u0440\\u0430\\u0442\\u043e\\u0434\\u0438\\u043d - 2022-12-30 06:44:34.644774+00:00 - 2022-12-30 07:44:26+00:00 : 10.0 \"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2022-12-30T07:07:01.497Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "8",
+    "object_repr": "2022-12-30 06:44:34.644774+00:00 - 2022-12-30 07:44:26+00:00 : 18.0 ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2022-12-30T07:07:05.700Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "8",
+    "object_repr": "2022-12-30 06:44:34.644774+00:00 - 2022-12-30 07:44:26+00:00 : 18.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u043e\\u0442\\u043e\\u0432\\u043d\\u043e\\u0441\\u0442\\u044c \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2022-12-30T07:07:14.444Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "Лоратодин",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e \\u0440\\u0435\\u0446\\u0435\\u043f\\u0442\\u0443\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2022-12-30T07:10:08.433Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "8",
+    "object_repr": "2022-12-30 06:44:34.644774+00:00 - 2022-12-30 07:44:26+00:00 : 18.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u043e\\u0441\\u0442\\u0430\\u0432\\u043b\\u0435\\u043d\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2022-12-30T07:13:01.544Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "7",
+    "object_repr": "2022-12-30 06:41:34.363301+00:00 - None : 27.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0432\\u044b\\u0434\\u0430\\u0447\\u0438 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2022-12-30T07:13:09.345Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "9",
+    "object_repr": "2022-12-30 07:05:39.502262+00:00 - None : 10.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0432\\u044b\\u0434\\u0430\\u0447\\u0438 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2022-12-30T15:39:58.497Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "9",
+    "object_repr": "2022-12-30 07:05:39.502262+00:00 - None : 10.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"name\": \"medicine order\", \"object\": \"Allercaps - 2022-12-30 07:05:39.502262+00:00 - None : 10.0 \", \"fields\": [\"Amount\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 81,
+  "fields": {
+    "action_time": "2022-12-30T15:40:20.159Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "9",
+    "object_repr": "2022-12-30 07:05:39.502262+00:00 - None : 20.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"medicine order\", \"object\": \"\\u041b\\u043e\\u0440\\u0430\\u0442\\u043e\\u0434\\u0438\\u043d - 2022-12-30 07:05:39.502262+00:00 - None : 20.0 \"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 82,
+  "fields": {
+    "action_time": "2022-12-30T16:25:08.480Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "10",
+    "object_repr": "2022-12-30 16:25:08.465386+00:00 - 2022-12-31 16:24:28+00:00 : 0 ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"medicine order\", \"object\": \"Allercaps - 2022-12-30 16:25:08.465386+00:00 - 2022-12-31 16:24:28+00:00 : 0 \"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 83,
+  "fields": {
+    "action_time": "2022-12-30T16:25:56.893Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "10",
+    "object_repr": "2022-12-30 16:25:08.465386+00:00 - 2022-12-31 16:24:28+00:00 : 10.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u043e\\u0442\\u043e\\u0432\\u043d\\u043e\\u0441\\u0442\\u044c \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 84,
+  "fields": {
+    "action_time": "2022-12-30T16:26:49.843Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "11",
+    "object_repr": "2022-12-30 16:26:49.833582+00:00 - None : 0 ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"medicine order\", \"object\": \"\\u041b\\u043e\\u0440\\u0430\\u0442\\u043e\\u0434\\u0438\\u043d - 2022-12-30 16:26:49.833582+00:00 - None : 0 \"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 85,
+  "fields": {
+    "action_time": "2022-12-30T16:27:17.058Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "11",
+    "object_repr": "2022-12-30 16:26:49.833582+00:00 - 2022-12-31 06:00:00+00:00 : 12.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u0430\\u0442\\u0430 \\u0432\\u044b\\u0434\\u0430\\u0447\\u0438 \\u0437\\u0430\\u043a\\u0430\\u0437\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 86,
+  "fields": {
+    "action_time": "2022-12-31T19:46:36.780Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "Roman100",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 87,
+  "fields": {
+    "action_time": "2022-12-31T19:50:47.111Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "romanzaitsau25@gmail.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Username\", \"First name\", \"Last name\", \"Email address\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 88,
+  "fields": {
+    "action_time": "2022-12-31T19:55:38.075Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "romanzaitsau25@gmail.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 89,
+  "fields": {
+    "action_time": "2022-12-31T19:59:46.688Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "2",
+    "object_repr": "romanzaitsau25@gmail.com",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 90,
+  "fields": {
+    "action_time": "2022-12-31T20:00:32.062Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "san",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 91,
+  "fields": {
+    "action_time": "2022-12-31T20:01:04.559Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "1",
+    "object_repr": "san",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Email address\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 92,
+  "fields": {
+    "action_time": "2022-12-31T20:01:48.092Z",
+    "user": 1,
+    "content_type": 4,
+    "object_id": "3",
+    "object_repr": "2222",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 93,
+  "fields": {
+    "action_time": "2022-12-31T20:06:37.954Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "Имя: цццц   Фамилия: ццццц Должность: Провизор-рецептар ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 94,
+  "fields": {
+    "action_time": "2022-12-31T20:07:34.815Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "Имя: Tania   Фамилия: Rodevich Должность: Фармацевт-рецептар ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043c\\u044f\", \"\\u0424\\u0430\\u043c\\u0438\\u043b\\u0438\\u044f\", \"\\u041f\\u043e\\u043b\", \"\\u0414\\u0430\\u0442\\u0430 \\u0440\\u043e\\u0436\\u0434\\u0435\\u043d\\u0438\\u044f\", \"\\u041e\\u0431\\u0440\\u0430\\u0437\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u0414\\u043e\\u043b\\u0436\\u043d\\u043e\\u0441\\u0442\\u044c\", \"\\u0417\\u041f, $\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 95,
+  "fields": {
+    "action_time": "2022-12-31T20:38:08.033Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "Имя: Tania   Фамилия: Rodevich Должность: Фармацевт-рецептар ",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 96,
+  "fields": {
+    "action_time": "2023-01-01T13:34:43.146Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "Имя: 22222   Фамилия: 22rfsdfds Должность: Ведущий бухгалтер ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 97,
+  "fields": {
+    "action_time": "2023-01-01T13:48:52.426Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "Имя: 22222   Фамилия: 22rfsdfds Должность: Ведущий бухгалтер ",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u043d\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0443\\u0441\\u043a\\u0430\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 98,
+  "fields": {
+    "action_time": "2023-01-01T13:52:52.284Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "Имя: 22222   Фамилия: 22rfsdfds Должность: Ведущий бухгалтер ",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 99,
+  "fields": {
+    "action_time": "2023-01-01T13:54:37.919Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "Имя: 222   Фамилия: 2222 Должность: Ведущий бухгалтер ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 100,
+  "fields": {
+    "action_time": "2023-01-01T13:54:44.352Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "Имя: 222   Фамилия: 2222 Должность: Ведущий бухгалтер ",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 101,
+  "fields": {
+    "action_time": "2023-01-04T16:04:55.446Z",
+    "user": 4,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Ambrovkd",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"medicine manufacturer\", \"object\": \"Ambrovkd - \\u0411\\u0435\\u043b\\u041c\\u0435\\u0434\\u041f\\u0440\\u0435\\u043f\\u0430\\u0440\\u0430\\u0442\\u044b - Republic of Belarus\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 102,
+  "fields": {
+    "action_time": "2023-01-04T17:45:56.580Z",
+    "user": 4,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "Hungary",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 103,
+  "fields": {
+    "action_time": "2023-01-04T17:48:55.906Z",
+    "user": 4,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "Egis Pharmaceuticals PLC - Hungary",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 104,
+  "fields": {
+    "action_time": "2023-01-04T17:49:05.562Z",
+    "user": 4,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Chaliksol",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u041c\\u0435\\u0436\\u0434\\u0443\\u043d\\u0430\\u0440\\u043e\\u0434\\u043d\\u043e\\u0435 \\u043d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u0426\\u0435\\u043d\\u0430\", \"\\u0421\\u043e\\u0441\\u0442\\u0430\\u0432\", \"\\u041d\\u0430\\u0446\\u0435\\u043d\\u043a\\u0430\", \"Slug\"]}}, {\"changed\": {\"name\": \"medicine manufacturer\", \"object\": \"Chaliksol - Egis Pharmaceuticals PLC - Hungary\", \"fields\": [\"\\u041f\\u0440\\u043e\\u0438\\u0437\\u0432\\u043e\\u0434\\u0438\\u0442\\u0435\\u043b\\u044c\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 105,
+  "fields": {
+    "action_time": "2023-01-04T17:52:58.943Z",
+    "user": 4,
+    "content_type": 10,
+    "object_id": "4",
+    "object_repr": "Germany",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 106,
+  "fields": {
+    "action_time": "2023-01-04T17:56:13.075Z",
+    "user": 4,
+    "content_type": 11,
+    "object_id": "3",
+    "object_repr": "Bayer - Germany",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 107,
+  "fields": {
+    "action_time": "2023-01-04T17:56:21.403Z",
+    "user": 4,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "Claritin",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0438\\u043c\\u0435\\u043d\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u041c\\u0435\\u0436\\u0434\\u0443\\u043d\\u0430\\u0440\\u043e\\u0434\\u043d\\u043e\\u0435 \\u043d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u0426\\u0435\\u043d\\u0430\", \"\\u0421\\u043e\\u0441\\u0442\\u0430\\u0432\", \"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e \\u043d\\u0430 \\u0441\\u043a\\u043b\\u0430\\u0434\\u0435\", \"\\u041f\\u043e \\u0440\\u0435\\u0446\\u0435\\u043f\\u0442\\u0443\", \"\\u041d\\u0430\\u0446\\u0435\\u043d\\u043a\\u0430\", \"Slug\"]}}, {\"changed\": {\"name\": \"medicine manufacturer\", \"object\": \"Claritin - Bayer - Germany\", \"fields\": [\"\\u041f\\u0440\\u043e\\u0438\\u0437\\u0432\\u043e\\u0434\\u0438\\u0442\\u0435\\u043b\\u044c\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 108,
+  "fields": {
+    "action_time": "2023-01-04T17:57:09.906Z",
+    "user": 4,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "БелМедПрепараты - Republic of Belarus",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 109,
+  "fields": {
+    "action_time": "2023-01-04T17:57:19.702Z",
+    "user": 4,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "Allercaps",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041c\\u0435\\u0436\\u0434\\u0443\\u043d\\u0430\\u0440\\u043e\\u0434\\u043d\\u043e\\u0435 \\u043d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u0421\\u043e\\u0441\\u0442\\u0430\\u0432\", \"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e \\u043d\\u0430 \\u0441\\u043a\\u043b\\u0430\\u0434\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 110,
+  "fields": {
+    "action_time": "2023-01-04T18:02:03.452Z",
+    "user": 4,
+    "content_type": 11,
+    "object_id": "4",
+    "object_repr": "Akademfarm - Republic of Belarus",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 111,
+  "fields": {
+    "action_time": "2023-01-04T18:02:08.524Z",
+    "user": 4,
+    "content_type": 12,
+    "object_id": "4",
+    "object_repr": "Flustop",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"medicine manufacturer\", \"object\": \"Flustop - Akademfarm - Republic of Belarus\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 112,
+  "fields": {
+    "action_time": "2023-01-04T18:06:50.271Z",
+    "user": 4,
+    "content_type": 10,
+    "object_id": "5",
+    "object_repr": "Ukraine",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 113,
+  "fields": {
+    "action_time": "2023-01-04T18:08:59.383Z",
+    "user": 4,
+    "content_type": 11,
+    "object_id": "5",
+    "object_repr": "KRKA - Hungary",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 114,
+  "fields": {
+    "action_time": "2023-01-04T18:09:05.743Z",
+    "user": 4,
+    "content_type": 12,
+    "object_id": "5",
+    "object_repr": "Amlessa",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"medicine manufacturer\", \"object\": \"Amlessa - KRKA - Hungary\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 115,
+  "fields": {
+    "action_time": "2023-01-04T18:09:22.185Z",
+    "user": 4,
+    "content_type": 12,
+    "object_id": "5",
+    "object_repr": "Amlessa",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 116,
+  "fields": {
+    "action_time": "2023-01-04T18:13:39.751Z",
+    "user": 4,
+    "content_type": 11,
+    "object_id": "6",
+    "object_repr": "EGIS - Hungary",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 117,
+  "fields": {
+    "action_time": "2023-01-04T18:13:49.414Z",
+    "user": 4,
+    "content_type": 12,
+    "object_id": "6",
+    "object_repr": "Grandaksin",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"medicine manufacturer\", \"object\": \"Grandaksin - EGIS - Hungary\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 118,
+  "fields": {
+    "action_time": "2023-01-04T18:16:29.255Z",
+    "user": 4,
+    "content_type": 12,
+    "object_id": "7",
+    "object_repr": "Xarelto",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"medicine manufacturer\", \"object\": \"Xarelto - Bayer - Germany\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 119,
+  "fields": {
+    "action_time": "2023-01-04T18:19:11.178Z",
+    "user": 4,
+    "content_type": 11,
+    "object_id": "7",
+    "object_repr": "Agrofarm - Ukraine",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 120,
+  "fields": {
+    "action_time": "2023-01-04T18:19:25.791Z",
+    "user": 4,
+    "content_type": 12,
+    "object_id": "8",
+    "object_repr": "Septefril",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"medicine manufacturer\", \"object\": \"Septefril - Agrofarm - Ukraine\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 121,
+  "fields": {
+    "action_time": "2023-01-04T18:23:30.563Z",
+    "user": 4,
+    "content_type": 10,
+    "object_id": "6",
+    "object_repr": "Finlandia",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 122,
+  "fields": {
+    "action_time": "2023-01-04T18:25:15.134Z",
+    "user": 4,
+    "content_type": 11,
+    "object_id": "8",
+    "object_repr": "Santen - Finlandia",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 123,
+  "fields": {
+    "action_time": "2023-01-04T18:25:19.695Z",
+    "user": 4,
+    "content_type": 12,
+    "object_id": "9",
+    "object_repr": "Taflotan",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"medicine manufacturer\", \"object\": \"Taflotan - Santen - Finlandia\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 124,
+  "fields": {
+    "action_time": "2023-01-04T18:26:26.395Z",
+    "user": 4,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "Allercaps",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043e\\u0441\\u0442\\u0430\\u0432\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 125,
+  "fields": {
+    "action_time": "2023-01-04T18:27:07.024Z",
+    "user": 4,
+    "content_type": 12,
+    "object_id": "7",
+    "object_repr": "Xarelto",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043e\\u0441\\u0442\\u0430\\u0432\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 126,
+  "fields": {
+    "action_time": "2023-01-04T18:28:59.334Z",
+    "user": 4,
+    "content_type": 10,
+    "object_id": "7",
+    "object_repr": "Slovenia",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 127,
+  "fields": {
+    "action_time": "2023-01-04T18:32:08.270Z",
+    "user": 4,
+    "content_type": 11,
+    "object_id": "9",
+    "object_repr": "Sandoz - Slovenia",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 128,
+  "fields": {
+    "action_time": "2023-01-04T18:32:17.820Z",
+    "user": 4,
+    "content_type": 12,
+    "object_id": "10",
+    "object_repr": "Persen",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"medicine manufacturer\", \"object\": \"Persen - Sandoz - Slovenia\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 129,
+  "fields": {
+    "action_time": "2023-01-05T05:22:53.562Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "12",
+    "object_repr": "2023-01-05 05:22:53.556023+00:00 - None : 0 ",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"medicine order\", \"object\": \"Xarelto - 2023-01-05 05:22:53.556023+00:00 - None : 0 \"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 130,
+  "fields": {
+    "action_time": "2023-01-05T05:26:49.107Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "12",
+    "object_repr": "2023-01-05 05:22:53.556023+00:00 - None : 482.0 ",
+    "action_flag": 2,
+    "change_message": "[{\"added\": {\"name\": \"medicine order\", \"object\": \"Persen - 2023-01-05 05:22:53.556023+00:00 - None : 482.0 \"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 131,
+  "fields": {
+    "action_time": "2023-01-05T05:26:56.954Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "12",
+    "object_repr": "2023-01-05 05:22:53.556023+00:00 - None : 506.75 ",
+    "action_flag": 2,
+    "change_message": "[{\"deleted\": {\"name\": \"medicine order\", \"object\": \"Xarelto - 2023-01-05 05:22:53.556023+00:00 - None : 506.75 \"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 132,
+  "fields": {
+    "action_time": "2023-01-05T05:27:10.570Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "12",
+    "object_repr": "2023-01-05 05:22:53.556023+00:00 - None : 24.75 ",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add Уч. заведение",
+    "content_type": 7,
+    "codename": "add_backgrounds"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change Уч. заведение",
+    "content_type": 7,
+    "codename": "change_backgrounds"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete Уч. заведение",
+    "content_type": 7,
+    "codename": "delete_backgrounds"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view Уч. заведение",
+    "content_type": 7,
+    "codename": "view_backgrounds"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add Должность",
+    "content_type": 8,
+    "codename": "add_positions"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change Должность",
+    "content_type": 8,
+    "codename": "change_positions"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete Должность",
+    "content_type": 8,
+    "codename": "delete_positions"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view Должность",
+    "content_type": 8,
+    "codename": "view_positions"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add Работник",
+    "content_type": 9,
+    "codename": "add_staff"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change Работник",
+    "content_type": 9,
+    "codename": "change_staff"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete Работник",
+    "content_type": 9,
+    "codename": "delete_staff"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view Работник",
+    "content_type": 9,
+    "codename": "view_staff"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add Страна",
+    "content_type": 10,
+    "codename": "add_country"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change Страна",
+    "content_type": 10,
+    "codename": "change_country"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete Страна",
+    "content_type": 10,
+    "codename": "delete_country"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view Страна",
+    "content_type": 10,
+    "codename": "view_country"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add Производитель",
+    "content_type": 11,
+    "codename": "add_manufacturer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change Производитель",
+    "content_type": 11,
+    "codename": "change_manufacturer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete Производитель",
+    "content_type": 11,
+    "codename": "delete_manufacturer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view Производитель",
+    "content_type": 11,
+    "codename": "view_manufacturer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add Лекарство",
+    "content_type": 12,
+    "codename": "add_medicine"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change Лекарство",
+    "content_type": 12,
+    "codename": "change_medicine"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete Лекарство",
+    "content_type": 12,
+    "codename": "delete_medicine"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view Лекарство",
+    "content_type": 12,
+    "codename": "view_medicine"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add medicine order",
+    "content_type": 13,
+    "codename": "add_medicineorder"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change medicine order",
+    "content_type": 13,
+    "codename": "change_medicineorder"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete medicine order",
+    "content_type": 13,
+    "codename": "delete_medicineorder"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view medicine order",
+    "content_type": 13,
+    "codename": "view_medicineorder"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add Заказ",
+    "content_type": 14,
+    "codename": "add_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change Заказ",
+    "content_type": 14,
+    "codename": "change_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete Заказ",
+    "content_type": 14,
+    "codename": "delete_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view Заказ",
+    "content_type": 14,
+    "codename": "view_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add medicine manufacturer",
+    "content_type": 15,
+    "codename": "add_medicinemanufacturer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change medicine manufacturer",
+    "content_type": 15,
+    "codename": "change_medicinemanufacturer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete medicine manufacturer",
+    "content_type": 15,
+    "codename": "delete_medicinemanufacturer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view medicine manufacturer",
+    "content_type": 15,
+    "codename": "view_medicinemanufacturer"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add email address",
+    "content_type": 16,
+    "codename": "add_emailaddress"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change email address",
+    "content_type": 16,
+    "codename": "change_emailaddress"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete email address",
+    "content_type": 16,
+    "codename": "delete_emailaddress"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view email address",
+    "content_type": 16,
+    "codename": "view_emailaddress"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can add email confirmation",
+    "content_type": 17,
+    "codename": "add_emailconfirmation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can change email confirmation",
+    "content_type": 17,
+    "codename": "change_emailconfirmation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can delete email confirmation",
+    "content_type": 17,
+    "codename": "delete_emailconfirmation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can view email confirmation",
+    "content_type": 17,
+    "codename": "view_emailconfirmation"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 69,
+  "fields": {
+    "name": "Can add social account",
+    "content_type": 18,
+    "codename": "add_socialaccount"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 70,
+  "fields": {
+    "name": "Can change social account",
+    "content_type": 18,
+    "codename": "change_socialaccount"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 71,
+  "fields": {
+    "name": "Can delete social account",
+    "content_type": 18,
+    "codename": "delete_socialaccount"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 72,
+  "fields": {
+    "name": "Can view social account",
+    "content_type": 18,
+    "codename": "view_socialaccount"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 73,
+  "fields": {
+    "name": "Can add social application",
+    "content_type": 19,
+    "codename": "add_socialapp"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 74,
+  "fields": {
+    "name": "Can change social application",
+    "content_type": 19,
+    "codename": "change_socialapp"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 75,
+  "fields": {
+    "name": "Can delete social application",
+    "content_type": 19,
+    "codename": "delete_socialapp"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 76,
+  "fields": {
+    "name": "Can view social application",
+    "content_type": 19,
+    "codename": "view_socialapp"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 77,
+  "fields": {
+    "name": "Can add social application token",
+    "content_type": 20,
+    "codename": "add_socialtoken"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 78,
+  "fields": {
+    "name": "Can change social application token",
+    "content_type": 20,
+    "codename": "change_socialtoken"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 79,
+  "fields": {
+    "name": "Can delete social application token",
+    "content_type": 20,
+    "codename": "delete_socialtoken"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 80,
+  "fields": {
+    "name": "Can view social application token",
+    "content_type": 20,
+    "codename": "view_socialtoken"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$ECgnwEvtaK3HOXYBqEun9B$UlrRGTvdLg53PNTRAIRVlWdvmejGFaS1Ae6ESUPLJgI=",
+    "last_login": "2023-01-05T05:12:16.129Z",
+    "is_superuser": true,
+    "username": "san",
+    "first_name": "Alex",
+    "last_name": "",
+    "email": "romanzaitsau50@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-12-30T04:30:41Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$utR3V9MVQrPBsB14a9vWqd$WbPlqucaR0cftGIGlUjB7ZBnUL98Le5MqZCbOlSoTIo=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "romanzaitsau25@gmail.com",
+    "first_name": "Raman",
+    "last_name": "Zaitsev",
+    "email": "romanzaitsau35@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-12-31T19:46:35Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$XHCXneRzBCCg0B1uzKZKPi$9BL1xxCC9ld1PEXv4XMysls/ut6bAq3k1+pgiidlSMU=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "2222",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2022-12-31T20:01:47.274Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$0C6ZTtLy7aHk5jrnl6z1rh$LqkJPjM5v/+1AaAK1TX3XUHzDUtfyAsru7efz44sXgU=",
+    "last_login": "2023-01-04T16:04:09.659Z",
+    "is_superuser": true,
+    "username": "RomanZaitsev",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-01-04T16:03:44.405Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "staff_side",
+    "model": "backgrounds"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "staff_side",
+    "model": "positions"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "staff_side",
+    "model": "staff"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "client_side",
+    "model": "country"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "client_side",
+    "model": "manufacturer"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "client_side",
+    "model": "medicine"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "client_side",
+    "model": "medicineorder"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "client_side",
+    "model": "order"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 15,
+  "fields": {
+    "app_label": "client_side",
+    "model": "medicinemanufacturer"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 16,
+  "fields": {
+    "app_label": "account",
+    "model": "emailaddress"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 17,
+  "fields": {
+    "app_label": "account",
+    "model": "emailconfirmation"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 18,
+  "fields": {
+    "app_label": "socialaccount",
+    "model": "socialaccount"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 19,
+  "fields": {
+    "app_label": "socialaccount",
+    "model": "socialapp"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 20,
+  "fields": {
+    "app_label": "socialaccount",
+    "model": "socialtoken"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "2ste8z8a0k91uai29moniqxiyzthevcw",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hAQGKhL9z0DGWZAqoYmpV0Z765NutDtf-_9l4i4rTVuPS9xYnERWpx-t4T0yG0HfMd2myXNbV2mJHdFHrTLceb8vB7u30HFXr81ZZWcRUiaB0_FGzu4ZIM2oAyzcmCBnfFkkAozJASg7AOeIZRgDYr3B-YWOAk:1pB72c:cn2BGfidrNUpw-94yBIy6hsGaJ7h-BILr4whl5F1JkI",
+    "expire_date": "2023-01-13T04:30:46.622Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "b9qlngt4ipb91b78t8uib9tu7z5q114e",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pAZKFBcuvcMzTAdpGpoUtqV8e7apAvd_vfef6mBtrUMW5NlmEZ1Vp06_W6J-CF1B-Od6m3WPNd1mZLeFX3Qpq_zKM_L4f4dFGrlWwcMnqx14IWDyQAUu2glMyNg5ugcGOsQY9d7MsbEhNiDsA3gEZJR7w-y5TY3:1pD6FN:L0ZQ6CwGsmoRWDO5ra73dl_KJ2n0STx2jkPKozpsC20",
+    "expire_date": "2023-01-18T16:04:09.673Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "jml0tdf7ypj6csya2bp4a9dmd3uhkq12",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hAQGKhL9z0DGWZAqoYmpV0Z765NutDtf-_9l4i4rTVuPS9xYnERWpx-t4T0yG0HfMd2myXNbV2mJHdFHrTLceb8vB7u30HFXr81ZZWcRUiaB0_FGzu4ZIM2oAyzcmCBnfFkkAozJASg7AOeIZRgDYr3B-YWOAk:1pCneU:B8fkp17QNM9tQzVJq95V94s4ealvAeJbXXKTtDPJf8E",
+    "expire_date": "2023-01-17T20:12:50.612Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "l1cg3xkg7vzrv93ol9bso2d96j5psu93",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQAP_C2RCgWwoevfcNZLuwUjWQlPZk_Lsh6UGvM5N5i4DHnsPR0hbWKK5Ci8svW5CeqXQRH1juVVIt-7YusifytE3ONabX7Wz_Bhlb7ltNA_iYcCQg6xkNgEPvAAavo7YTGKUcMSfP5HiwDkaeovbKKIdE4vMF02I3hA:1pBHOr:25cpVp5Fm5XxLQmuM5UdJyoUQCieh5CvLrfmgTLw6_w",
+    "expire_date": "2023-01-13T15:34:25.029Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "lked8bqvt9bs2ksavzd3ko0tkjdkj3vi",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2hAQGKhL9z0DGWZAqoYmpV0Z765NutDtf-_9l4i4rTVuPS9xYnERWpx-t4T0yG0HfMd2myXNbV2mJHdFHrTLceb8vB7u30HFXr81ZZWcRUiaB0_FGzu4ZIM2oAyzcmCBnfFkkAozJASg7AOeIZRgDYr3B-YWOAk:1pDIY4:zMUFkBVS4TrrSH8qbRWvd4-kMb-qSr8_r5c9KB-lPqE",
+    "expire_date": "2023-01-19T05:12:16.134Z"
+  }
+},
+{
   "model": "staff_side.staff",
   "pk": 1,
   "fields": {
-    "sex": "W",
     "first_name": "Nadia",
     "second_name": "Zenevich",
+    "sex": "W",
     "date_of_birth": "1971-01-01",
     "schedule_type": "FULL_TIME",
     "background": 6,
@@ -18,9 +2726,9 @@
   "model": "staff_side.staff",
   "pk": 2,
   "fields": {
-    "sex": "M",
     "first_name": "Roman",
     "second_name": "Zaitcev",
+    "sex": "M",
     "date_of_birth": "1991-02-15",
     "schedule_type": "FLEXIBLE",
     "background": 1,
@@ -33,15 +2741,30 @@
   "model": "staff_side.staff",
   "pk": 3,
   "fields": {
-    "sex": "W",
     "first_name": "Tamara",
     "second_name": "Kobzeva",
+    "sex": "W",
     "date_of_birth": "1976-06-01",
     "schedule_type": "FLEXIBLE",
     "background": 4,
     "position": 4,
     "_salary": 600.0,
     "vacations": 31
+  }
+},
+{
+  "model": "staff_side.staff",
+  "pk": 4,
+  "fields": {
+    "first_name": "Tania",
+    "second_name": "Rodevich",
+    "sex": "W",
+    "date_of_birth": "1999-01-01",
+    "schedule_type": "FULL_TIME",
+    "background": 4,
+    "position": 4,
+    "_salary": 800.0,
+    "vacations": 25
   }
 },
 {
@@ -138,6 +2861,383 @@
   "fields": {
     "educational_institution": "Школа",
     "education_completeness": "NOT_FULL"
+  }
+},
+{
+  "model": "client_side.country",
+  "pk": 1,
+  "fields": {
+    "name_country": "Russian Federation"
+  }
+},
+{
+  "model": "client_side.country",
+  "pk": 2,
+  "fields": {
+    "name_country": "Republic of Belarus"
+  }
+},
+{
+  "model": "client_side.country",
+  "pk": 3,
+  "fields": {
+    "name_country": "Hungary"
+  }
+},
+{
+  "model": "client_side.country",
+  "pk": 4,
+  "fields": {
+    "name_country": "Germany"
+  }
+},
+{
+  "model": "client_side.country",
+  "pk": 5,
+  "fields": {
+    "name_country": "Ukraine"
+  }
+},
+{
+  "model": "client_side.country",
+  "pk": 6,
+  "fields": {
+    "name_country": "Finlandia"
+  }
+},
+{
+  "model": "client_side.country",
+  "pk": 7,
+  "fields": {
+    "name_country": "Slovenia"
+  }
+},
+{
+  "model": "client_side.manufacturer",
+  "pk": 1,
+  "fields": {
+    "legacy_name": "БелМедПрепараты",
+    "country": 2,
+    "legacy_address": "Аранская",
+    "site": null,
+    "contacts": "+375555555555",
+    "email": null
+  }
+},
+{
+  "model": "client_side.manufacturer",
+  "pk": 2,
+  "fields": {
+    "legacy_name": "Egis Pharmaceuticals PLC",
+    "country": 3,
+    "legacy_address": "ul.Stralova",
+    "site": "http://www.egis.health/",
+    "contacts": "+375 29 198-34-84",
+    "email": "info@egis.by"
+  }
+},
+{
+  "model": "client_side.manufacturer",
+  "pk": 3,
+  "fields": {
+    "legacy_name": "Bayer",
+    "country": 4,
+    "legacy_address": "ul.Krasivsa,6",
+    "site": "http://www.bayer.ru",
+    "contacts": "80335658185",
+    "email": "ru.communications@bayer.com"
+  }
+},
+{
+  "model": "client_side.manufacturer",
+  "pk": 4,
+  "fields": {
+    "legacy_name": "Akademfarm",
+    "country": 2,
+    "legacy_address": "ul. Kuprevicha, 5",
+    "site": "http://www.academpharm.by",
+    "contacts": "+375 (17) 268-63-64",
+    "email": "info@academpharm.by"
+  }
+},
+{
+  "model": "client_side.manufacturer",
+  "pk": 5,
+  "fields": {
+    "legacy_name": "KRKA",
+    "country": 3,
+    "legacy_address": "ul.Philimonova, 25",
+    "site": "http://info.ru@krka.biz",
+    "contacts": "80336585214",
+    "email": "info.ru@krka.biz"
+  }
+},
+{
+  "model": "client_side.manufacturer",
+  "pk": 6,
+  "fields": {
+    "legacy_name": "EGIS",
+    "country": 3,
+    "legacy_address": "ul.Kereszturi, 65",
+    "site": "http://www.int.egis.health/",
+    "contacts": "+36 1 803-5555",
+    "email": "mailbox@egis.hu"
+  }
+},
+{
+  "model": "client_side.manufacturer",
+  "pk": 7,
+  "fields": {
+    "legacy_name": "Agrofarm",
+    "country": 5,
+    "legacy_address": "ul.Karoma,5",
+    "site": "http://www.agrofarmvrn.com",
+    "contacts": "80443253-93-99",
+    "email": "info@agrofarmvrn.ru"
+  }
+},
+{
+  "model": "client_side.manufacturer",
+  "pk": 8,
+  "fields": {
+    "legacy_name": "Santen",
+    "country": 6,
+    "legacy_address": "ul.Gobalta,6",
+    "site": "http://www.santen.by",
+    "contacts": "+375 17 301 87 88",
+    "email": "santen@tut.by"
+  }
+},
+{
+  "model": "client_side.manufacturer",
+  "pk": 9,
+  "fields": {
+    "legacy_name": "Sandoz",
+    "country": 7,
+    "legacy_address": "ul.Leninskaja,56",
+    "site": "http://www.sandoz.ru/",
+    "contacts": "+7 495 660 75 09",
+    "email": "drug.safety@novartis.com"
+  }
+},
+{
+  "model": "client_side.medicine",
+  "pk": 1,
+  "fields": {
+    "trade_name": "Claritin",
+    "international_name": "Loratadin",
+    "structure": "Loratadin, emulgator, lactoza",
+    "price": 10.96,
+    "slug": "Loratadin",
+    "_price_increment": 2,
+    "with_recipe": false,
+    "amount_on_stock": 7
+  }
+},
+{
+  "model": "client_side.medicine",
+  "pk": 2,
+  "fields": {
+    "trade_name": "Allercaps",
+    "international_name": "Cetirisini",
+    "structure": "Cetirisini, emulgator, lactoza",
+    "price": 5.0,
+    "slug": "allercaps",
+    "_price_increment": 2,
+    "with_recipe": false,
+    "amount_on_stock": 30
+  }
+},
+{
+  "model": "client_side.medicine",
+  "pk": 3,
+  "fields": {
+    "trade_name": "Chaliksol",
+    "international_name": "Ambroksol",
+    "structure": "Ambroksol",
+    "price": 6.82,
+    "slug": "Chaliksol",
+    "_price_increment": 5,
+    "with_recipe": false,
+    "amount_on_stock": 10
+  }
+},
+{
+  "model": "client_side.medicine",
+  "pk": 4,
+  "fields": {
+    "trade_name": "Flustop",
+    "international_name": "Oseltamevir",
+    "structure": "Oseltamevir, amilaza, lactaza",
+    "price": 25.4,
+    "slug": "Flustop",
+    "_price_increment": 2,
+    "with_recipe": false,
+    "amount_on_stock": 100
+  }
+},
+{
+  "model": "client_side.medicine",
+  "pk": 5,
+  "fields": {
+    "trade_name": "Amlessa",
+    "international_name": "Perindopril+Amlodipin",
+    "structure": "Perindopril, Amlodipin,  Amilaza, Lactoza",
+    "price": 16.27,
+    "slug": "Amlessa",
+    "_price_increment": 2,
+    "with_recipe": false,
+    "amount_on_stock": 20
+  }
+},
+{
+  "model": "client_side.medicine",
+  "pk": 6,
+  "fields": {
+    "trade_name": "Grandaksin",
+    "international_name": "Tofizopami",
+    "structure": "Tofizopami, Milaza, Lactaza, Hudraza",
+    "price": 37.58,
+    "slug": "Grandaksini",
+    "_price_increment": 3,
+    "with_recipe": true,
+    "amount_on_stock": 30
+  }
+},
+{
+  "model": "client_side.medicine",
+  "pk": 7,
+  "fields": {
+    "trade_name": "Xarelto",
+    "international_name": "Rivaroxaban",
+    "structure": "Rivaroxaban, emulgator, lactoza",
+    "price": 120.5,
+    "slug": "Xarelto",
+    "_price_increment": 5,
+    "with_recipe": true,
+    "amount_on_stock": 30
+  }
+},
+{
+  "model": "client_side.medicine",
+  "pk": 8,
+  "fields": {
+    "trade_name": "Septefril",
+    "international_name": "Septefril",
+    "structure": "Septefril",
+    "price": 2.6,
+    "slug": "Septefril",
+    "_price_increment": 2,
+    "with_recipe": false,
+    "amount_on_stock": 32
+  }
+},
+{
+  "model": "client_side.medicine",
+  "pk": 9,
+  "fields": {
+    "trade_name": "Taflotan",
+    "international_name": "Tafluprost",
+    "structure": "Tafluprost, Glicerini, Natrii Gydrofosfati",
+    "price": 46.07,
+    "slug": "Taflotan",
+    "_price_increment": 3,
+    "with_recipe": false,
+    "amount_on_stock": 19
+  }
+},
+{
+  "model": "client_side.medicine",
+  "pk": 10,
+  "fields": {
+    "trade_name": "Persen",
+    "international_name": "Persen",
+    "structure": "Persen, amilaza, lactaza",
+    "price": 4.95,
+    "slug": "Persen",
+    "_price_increment": 3,
+    "with_recipe": false,
+    "amount_on_stock": 6
+  }
+},
+{
+  "model": "client_side.medicinemanufacturer",
+  "pk": 1,
+  "fields": {
+    "medicine": 1,
+    "manufacturer": 3
+  }
+},
+{
+  "model": "client_side.medicinemanufacturer",
+  "pk": 2,
+  "fields": {
+    "medicine": 2,
+    "manufacturer": 1
+  }
+},
+{
+  "model": "client_side.medicinemanufacturer",
+  "pk": 3,
+  "fields": {
+    "medicine": 3,
+    "manufacturer": 2
+  }
+},
+{
+  "model": "client_side.medicinemanufacturer",
+  "pk": 4,
+  "fields": {
+    "medicine": 4,
+    "manufacturer": 4
+  }
+},
+{
+  "model": "client_side.medicinemanufacturer",
+  "pk": 5,
+  "fields": {
+    "medicine": 5,
+    "manufacturer": 5
+  }
+},
+{
+  "model": "client_side.medicinemanufacturer",
+  "pk": 6,
+  "fields": {
+    "medicine": 6,
+    "manufacturer": 6
+  }
+},
+{
+  "model": "client_side.medicinemanufacturer",
+  "pk": 7,
+  "fields": {
+    "medicine": 7,
+    "manufacturer": 3
+  }
+},
+{
+  "model": "client_side.medicinemanufacturer",
+  "pk": 8,
+  "fields": {
+    "medicine": 8,
+    "manufacturer": 7
+  }
+},
+{
+  "model": "client_side.medicinemanufacturer",
+  "pk": 9,
+  "fields": {
+    "medicine": 9,
+    "manufacturer": 8
+  }
+},
+{
+  "model": "client_side.medicinemanufacturer",
+  "pk": 10,
+  "fields": {
+    "medicine": 10,
+    "manufacturer": 9
   }
 }
 ]

@@ -25,19 +25,16 @@ CART_SESSION_ID = 'cart'
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config['SECRET_KEY']
 
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['127.0.0.1']
 
 # Application definition
 
@@ -50,15 +47,16 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'django_filters',
+
     'staff_side.apps.StaffSideConfig',
     'client_side.apps.ClientSideConfig',
-    'accounts',
+    'accounts.apps.AccountsConfig',
     'cart.apps.CartConfig',
+
     'allauth',  # само приложение авторизации
     'allauth.account',  # модель и её формы для аккаунтов
     'allauth.socialaccount',  # модель и её формы для аккаунтов в соц сетях
-    'allauth.socialaccount.providers.yandex',
-    # подключение яндекс сервисов авторизации
+    'allauth.socialaccount.providers.yandex',  # подключение яндекс сервисов авторизации
     'allauth.socialaccount.providers.vk',
 ]
 
@@ -70,17 +68,15 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.template.context_processors.request',
-
 ]
 
 SITE_ID = 1
 
-# БУдем использовать внешний сторонний сервис авторизации и регистрации
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
+
 ROOT_URLCONF = 'medicine_shop_project.urls'
 
 TEMPLATES = [
@@ -102,7 +98,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'medicine_shop_project.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
@@ -112,20 +107,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
-SOCIALACCOUNT_PROVIDERS = {
-    'google': {
-        # For each OAuth based provider, either add a ``SocialApp``
-        # (``socialaccount`` app) containing the required client
-        # credentials, or list them here:
-        'APP': {
-            'client_id': '123',
-            'secret': '456',
-            'key': ''
-        }
-    }
-}
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -145,9 +126,10 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "client_side/static"),
-                    os.path.join(BASE_DIR, "staff_side/static"),
-                ]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "client_side/static"),
+    os.path.join(BASE_DIR, "staff_side/static"),
+]
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
@@ -161,7 +143,6 @@ USE_I18N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
@@ -171,6 +152,28 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_URL = '/accounts/login/'
+
+LOGIN_REDIRECT_URL = '/'
+
+# это тонкие настройки шаблонов авторизации и регистрации
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_UNIQUE_EMAIL = True
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+#
+EMAIL_CONFIRMATION_SIGNUP = True
+ACCOUNT_CONFIRM_EMAIL_ON_GET = False
+ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 1
+
+# EMAIL_HOST = 'smtp.mail.ru'
+# EMAIL_PORT = 465  # порт smtp сервера тоже одинаковый
+# EMAIL_HOST_USER = ''  # ваше имя пользователя, например если ваша почта user@yandex.ru,
+# # то сюда надо писать user, иными словами, это всё то что идёт до собаки
+# EMAIL_HOST_PASSWORD = config['EMAIL_HOST_PASSWORD']  # пароль от почты
+# EMAIL_USE_SSL = True
+# DEFAULT_FROM_EMAIL = EMAIL_HOST_USER + '@mail.ru'
 
 # Экспортируем модель базы данных:
 # manage.py dumpdata --indent 2 > mydata.json

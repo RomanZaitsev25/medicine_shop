@@ -16,8 +16,6 @@ class Cart(object):
             cart = self.session[settings.CART_SESSION_ID] = {}
         self.cart = cart
 
-
-
     def add(self, medicine, quantity=1, update_quantity=False):
         """
         Добавить продукт в корзину или обновить его количество.
@@ -71,7 +69,6 @@ class Cart(object):
         """
         return sum(Decimal(item['price']) * item['quantity'] for item in
                    self.cart.values())
-
 
     def clear(self):
         # удаление корзины из сессии

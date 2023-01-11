@@ -61,5 +61,5 @@ class MedicineDetailView(DetailView):
 
 class MedicineUpdate(UpdateView):
     model = Medicine
-    template_name = 'medicine.html'
+    template_name = 'medicine_create.html'
     form_class = MedicineForm
