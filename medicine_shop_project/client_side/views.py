@@ -1,12 +1,12 @@
 from datetime import datetime
 
-# from django.contrib.auth.mixins import PermissionRequiredMixin
-from django.shortcuts import get_object_or_404
+from django.contrib.auth.models import User
+from django.db import IntegrityError
+from django.shortcuts import get_object_or_404, redirect, render
 from django.views.generic import ListView, TemplateView, DetailView, UpdateView
 
 from .filters import MedicineFilter
-from .forms import MedicineForm
-from .models import Medicine
+from .models import Medicine, Cart, MedicineCart
 
 
 class MedicineListView(ListView):
@@ -40,6 +40,17 @@ class IndexView(TemplateView):
         return context
 
 
+def cart_view(request, user_id):
+    medicines_in_cart = MedicineCart.objects.filter(
+        cart=Cart.objects.get(user__id=user_id)
+    ).all()
+    return render(
+        request,
+        template_name='cart.html',
+        context={'medicines_in_cart': medicines_in_cart, 'title': 'cart'},
+    )
+
+
 class MedicineDetailView(DetailView):
     # permission_required = ('my_farmasy.view_medicine',)  # <--- тут запятую забыл после пермишена:
     # у тебя разрешения передаются в виде кортежа, а не строки
@@ -59,7 +70,25 @@ class MedicineDetailView(DetailView):
         return context
 
 
-class MedicineUpdate(UpdateView):
-    model = Medicine
-    template_name = 'medicine_create.html'
-    form_class = MedicineForm
+def add_to_cart(request, pk):
+    if cart := Cart.objects.get(session_key=request.session.session_key):
+        pass
+    else:
+        cart = Cart.objects.create(
+            user=request.user,
+            session_key=request.session.session_key,
+        )
+
+    try:
+        MedicineCart.objects.create(
+            medicine=Medicine.objects.get(id=pk),
+            cart=cart,
+        )
+    except IntegrityError:
+        medicine_cart = MedicineCart.objects.filter(
+            medicine=Medicine.objects.get(id=pk),
+            cart=cart,
+        ).first()
+        medicine_cart.amount += 1
+        medicine_cart.save()
+    return redirect(to='medicines')

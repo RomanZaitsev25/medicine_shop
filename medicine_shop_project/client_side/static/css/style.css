@@ -474,13 +474,13 @@ ul.contact li a.icon-rss:before
 /*********************************************************************************/
 	
 
-	#header-featured
-	{
-		padding: 10em 0em;
-		background-image: url(images/banner.jpg);
-		background-position: center;
-		background-size: cover;
-	}
+#header-featured
+{
+    padding: 10em 0em;
+    background-image: url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+}
 
 
 
@@ -661,13 +661,11 @@ ul.contact li a.icon-rss:before
 {
 	display: inline-block;
 	margin-bottom: 1em;
-	width: 3em;
-	height: 3em;
-	line-height: 3em;
-	font-size: 4em;
+	width: 1em;
+	height: 1em;
+	line-height: 1em;
+	font-size: 1em;
 	color: #8dc63f;
-	border: 1px solid #86bd3b;
-	border-radius: 50%;
 }
 
 .column1,  .column2,  .column3,  .column4

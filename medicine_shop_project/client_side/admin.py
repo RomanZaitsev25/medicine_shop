@@ -1,7 +1,7 @@
 from django.contrib import admin
 # from django.utils.safestring import mark_safe
 
-from .models import Order, Medicine, Country, Manufacturer, MedicineOrder, MedicineManufacturer
+from .models import Order, Medicine, Country, Manufacturer, MedicineOrder, MedicineManufacturer, Cart, MedicineCart
 from .forms import MedicineForm, ManufacturerForms, OrderForm
 
 
@@ -16,6 +16,13 @@ class MedicineOrderInline(admin.TabularInline):
     model = MedicineOrder
     verbose_name = 'Лекарство на заказ'
     verbose_name_plural = 'Лекарства на заказ'
+    extra = 0
+
+
+class MedicineCartInline(admin.TabularInline):
+    model = MedicineCart
+    verbose_name = 'Лекарство в корзине'
+    verbose_name_plural = 'Лекарства в корзине'
     extra = 0
 
 
@@ -73,3 +80,11 @@ class ManufacturerAdmin(admin.ModelAdmin):
     list_filter = ('legacy_name', 'country', 'site')
     search_fields = ('legacy_name', 'country', 'site')
     form = ManufacturerForms
+
+
+@admin.register(Cart)
+class CartAdmin(admin.ModelAdmin):
+    inlines = (MedicineCartInline,)
+    list_display = ('id', 'user', 'session_key')
+    list_filter = ('user',)
+    search_fields = ('user',)

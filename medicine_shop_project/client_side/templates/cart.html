@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load register_customs %}
+
+{% block title %}
+Medicines
+{% endblock title %}
+
+{% block content %}
+
+<div class="medicine-title">Лекарства в корзине</div>
+
+<div id="featured-wrapper">
+
+    <div id="featured" class="extra2 margin-btm container">
+
+        {% if medicines_in_cart %}
+            <table>
+                <thead>
+                <tr>
+                    <td>
+                        <h2>Название</h2>
+                    </td>
+                    <td>
+                        <h2>Цена</h2>
+                    </td>
+                    <td>
+                        <h2>Производитель</h2>
+                    </td>
+                    <td>
+                        <h2>Количество</h2>
+                    </td>
+                </tr>
+                </thead>
+                <tbody>
+                    {% for medicines_cart in medicines_in_cart %}
+                        <tr>
+                            <td>
+                                <a href="{% url 'medicine_detail' medicines_cart.medicine.slug %}">{{ medicines_cart.medicine.trade_name }}</a>
+                            </td>
+                            <td>
+                                {{ medicines_cart.medicine.price }} BYN
+                            </td>
+                            <td>
+                                {% for manufacturer in medicines_cart.medicine.manufacturer.all %}
+                                    {{ manufacturer }}
+                                {% endfor %}
+                            </td>
+                            <td>
+                                {{ medicines_cart.amount }}
+                            </td>
+                            <td>
+                              {# Сделать увеличение количества и уменьшение #}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <h2>Товаров нет!</h2>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock content %}

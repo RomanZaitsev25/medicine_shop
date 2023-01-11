@@ -23,9 +23,15 @@
 				{% if title == 'index' %}
 					<li class="current_page_item"><a href="{% url 'home' %}" accesskey="1" title="Home">Home</a></li>
 					<li><a href="{% url 'medicines' %}" accesskey="2" title="Medicine">Medicine</a></li>
-				{% else %}
+					<li><a href="{% url 'cart' user.id %}" accesskey="2" title="Cart">Your Cart</a></li>
+				{% elif title == 'medicines' %}
 					<li><a href="{% url 'home' %}" accesskey="1" title="Home">Home</a></li>
 					<li class="current_page_item"><a href="{% url 'medicines' %}" accesskey="2" title="Medicine">Medicine</a></li>
+					<li><a href="{% url 'cart' user.id %}" accesskey="2" title="Cart">Your Cart</a></li>
+				{% elif title == 'cart' %}
+					<li><a href="{% url 'home' %}" accesskey="1" title="Home">Home</a></li>
+					<li><a href="{% url 'medicines' %}" accesskey="2" title="Medicine">Medicine</a></li>
+					<li class="current_page_item"><a href="{% url 'cart' user.id %}" accesskey="2" title="Cart">Your Cart</a></li>
 				{% endif %}
 			</ul>
 		</div>

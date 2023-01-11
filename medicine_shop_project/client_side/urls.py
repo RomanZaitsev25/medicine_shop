@@ -1,14 +1,14 @@
 from django.urls import path
 
-from .views import MedicineListView, IndexView, MedicineDetailView, MedicineUpdate
+from .views import MedicineListView, IndexView, MedicineDetailView, add_to_cart, cart_view
 
 urlpatterns = [
     path('medicine/', MedicineListView.as_view(), name='medicines'),
     path('medicine/<slug:slug>', MedicineDetailView.as_view(),
          name='medicine_detail'),
-    path('medicine/<slug:slug>/update/', MedicineUpdate.as_view(),
-         name='update_medicine'),
-    # path('cart/', MedicineOrderView.as_view(), name='order_medicine'),
+    path('medicine/<int:pk>/add_to_cart/', add_to_cart,
+         name='add_to_cart'),
+    path('cart/<int:user_id>', cart_view, name='cart'),
     # path('make-order/', order_medicine()),
     path('', IndexView.as_view(), name='home'),
 ]

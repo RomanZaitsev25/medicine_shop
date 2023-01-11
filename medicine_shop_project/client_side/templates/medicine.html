@@ -6,6 +6,7 @@ Medicines
 {% endblock title %}
 
 {% block content %}
+
 <div class="medicine-title">Все лекарства</div>
 
 <form action="" method="get">
@@ -16,6 +17,8 @@ Medicines
 </form>
 
 <div id="featured-wrapper">
+
+
     <div id="featured" class="extra2 margin-btm container">
 
         {% if medicines %}
@@ -53,13 +56,9 @@ Medicines
                                     {{ manufacturer }}
                                 {% endfor %}
                             </td>
-                            <a href="{% url 'update_medicine' medicine.slug %}">
-                                <button class="add in class">Добавить в
-                                    корзину
-                                </button>
-                            </a>
-
-
+                            <td>
+                                <a class="fa fa-arrow-circle-down" title="Добавить в корзину" href="{% url 'add_to_cart' medicine.id %}"></a></h3>
+                            </td>
                         </tr>
                     {% endfor %}
                 </tbody>
