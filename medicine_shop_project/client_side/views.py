@@ -71,13 +71,10 @@ class MedicineDetailView(DetailView):
 
 
 def add_to_cart(request, pk):
-    if cart := Cart.objects.get(session_key=request.session.session_key):
-        pass
-    else:
-        cart = Cart.objects.create(
-            user=request.user,
-            session_key=request.session.session_key,
-        )
+    cart, created = Cart.objects.get_or_create(
+        session_key=request.session.session_key,
+        defaults={'user': request.user},
+    )
 
     try:
         MedicineCart.objects.create(
