@@ -33,7 +33,7 @@
     "user": 1,
     "content_type": 11,
     "object_id": "1",
-    "object_repr": "Р‘РµР»РњРµРґРџСЂРµРїР°СЂР°С‚С‹ - Republic of Belarus",
+    "object_repr": "БелМедПрепараты - Republic of Belarus",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -46,7 +46,7 @@
     "user": 1,
     "content_type": 12,
     "object_id": "1",
-    "object_repr": "Р›РѕСЂР°С‚РѕРґРёРЅ",
+    "object_repr": "Лоратодин",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"medicine manufacturer\", \"object\": \"\\u041b\\u043e\\u0440\\u0430\\u0442\\u043e\\u0434\\u0438\\u043d - \\u0411\\u0435\\u043b\\u041c\\u0435\\u0434\\u041f\\u0440\\u0435\\u043f\\u0430\\u0440\\u0430\\u0442\\u044b - Republic of Belarus\"}}]"
   }
@@ -59,7 +59,7 @@
     "user": 1,
     "content_type": 12,
     "object_id": "1",
-    "object_repr": "Р›РѕСЂР°С‚РѕРґРёРЅ",
+    "object_repr": "Лоратодин",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"Slug\"]}}]"
   }
@@ -982,7 +982,7 @@
     "user": 1,
     "content_type": 12,
     "object_id": "1",
-    "object_repr": "Р›РѕСЂР°С‚РѕРґРёРЅ",
+    "object_repr": "Лоратодин",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e \\u0440\\u0435\\u0446\\u0435\\u043f\\u0442\\u0443\"]}}]"
   }
@@ -1203,7 +1203,7 @@
     "user": 1,
     "content_type": 9,
     "object_id": "4",
-    "object_repr": "РРјСЏ: С†С†С†С†   Р¤Р°РјРёР»РёСЏ: С†С†С†С†С† Р”РѕР»Р¶РЅРѕСЃС‚СЊ: РџСЂРѕРІРёР·РѕСЂ-СЂРµС†РµРїС‚Р°СЂ ",
+    "object_repr": "Имя: цццц   Фамилия: ццццц Должность: Провизор-рецептар ",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -1216,7 +1216,7 @@
     "user": 1,
     "content_type": 9,
     "object_id": "4",
-    "object_repr": "РРјСЏ: Tania   Р¤Р°РјРёР»РёСЏ: Rodevich Р”РѕР»Р¶РЅРѕСЃС‚СЊ: Р¤Р°СЂРјР°С†РµРІС‚-СЂРµС†РµРїС‚Р°СЂ ",
+    "object_repr": "Имя: Tania   Фамилия: Rodevich Должность: Фармацевт-рецептар ",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u043c\\u044f\", \"\\u0424\\u0430\\u043c\\u0438\\u043b\\u0438\\u044f\", \"\\u041f\\u043e\\u043b\", \"\\u0414\\u0430\\u0442\\u0430 \\u0440\\u043e\\u0436\\u0434\\u0435\\u043d\\u0438\\u044f\", \"\\u041e\\u0431\\u0440\\u0430\\u0437\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u0414\\u043e\\u043b\\u0436\\u043d\\u043e\\u0441\\u0442\\u044c\", \"\\u0417\\u041f, $\"]}}]"
   }
@@ -1229,7 +1229,7 @@
     "user": 1,
     "content_type": 9,
     "object_id": "4",
-    "object_repr": "РРјСЏ: Tania   Р¤Р°РјРёР»РёСЏ: Rodevich Р”РѕР»Р¶РЅРѕСЃС‚СЊ: Р¤Р°СЂРјР°С†РµРІС‚-СЂРµС†РµРїС‚Р°СЂ ",
+    "object_repr": "Имя: Tania   Фамилия: Rodevich Должность: Фармацевт-рецептар ",
     "action_flag": 2,
     "change_message": "[]"
   }
@@ -1242,7 +1242,7 @@
     "user": 1,
     "content_type": 9,
     "object_id": "5",
-    "object_repr": "РРјСЏ: 22222   Р¤Р°РјРёР»РёСЏ: 22rfsdfds Р”РѕР»Р¶РЅРѕСЃС‚СЊ: Р’РµРґСѓС‰РёР№ Р±СѓС…РіР°Р»С‚РµСЂ ",
+    "object_repr": "Имя: 22222   Фамилия: 22rfsdfds Должность: Ведущий бухгалтер ",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -1255,7 +1255,7 @@
     "user": 1,
     "content_type": 9,
     "object_id": "5",
-    "object_repr": "РРјСЏ: 22222   Р¤Р°РјРёР»РёСЏ: 22rfsdfds Р”РѕР»Р¶РЅРѕСЃС‚СЊ: Р’РµРґСѓС‰РёР№ Р±СѓС…РіР°Р»С‚РµСЂ ",
+    "object_repr": "Имя: 22222   Фамилия: 22rfsdfds Должность: Ведущий бухгалтер ",
     "action_flag": 2,
     "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u043d\\u0435\\u0439 \\u043e\\u0442\\u043f\\u0443\\u0441\\u043a\\u0430\"]}}]"
   }
@@ -1268,7 +1268,7 @@
     "user": 1,
     "content_type": 9,
     "object_id": "5",
-    "object_repr": "РРјСЏ: 22222   Р¤Р°РјРёР»РёСЏ: 22rfsdfds Р”РѕР»Р¶РЅРѕСЃС‚СЊ: Р’РµРґСѓС‰РёР№ Р±СѓС…РіР°Р»С‚РµСЂ ",
+    "object_repr": "Имя: 22222   Фамилия: 22rfsdfds Должность: Ведущий бухгалтер ",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1281,7 +1281,7 @@
     "user": 1,
     "content_type": 9,
     "object_id": "6",
-    "object_repr": "РРјСЏ: 222   Р¤Р°РјРёР»РёСЏ: 2222 Р”РѕР»Р¶РЅРѕСЃС‚СЊ: Р’РµРґСѓС‰РёР№ Р±СѓС…РіР°Р»С‚РµСЂ ",
+    "object_repr": "Имя: 222   Фамилия: 2222 Должность: Ведущий бухгалтер ",
     "action_flag": 1,
     "change_message": "[{\"added\": {}}]"
   }
@@ -1294,7 +1294,7 @@
     "user": 1,
     "content_type": 9,
     "object_id": "6",
-    "object_repr": "РРјСЏ: 222   Р¤Р°РјРёР»РёСЏ: 2222 Р”РѕР»Р¶РЅРѕСЃС‚СЊ: Р’РµРґСѓС‰РёР№ Р±СѓС…РіР°Р»С‚РµСЂ ",
+    "object_repr": "Имя: 222   Фамилия: 2222 Должность: Ведущий бухгалтер ",
     "action_flag": 3,
     "change_message": ""
   }
@@ -1398,7 +1398,7 @@
     "user": 4,
     "content_type": 11,
     "object_id": "1",
-    "object_repr": "Р‘РµР»РњРµРґРџСЂРµРїР°СЂР°С‚С‹ - Republic of Belarus",
+    "object_repr": "БелМедПрепараты - Republic of Belarus",
     "action_flag": 2,
     "change_message": "[]"
   }
@@ -1820,6 +1820,71 @@
   }
 },
 {
+  "model": "admin.logentry",
+  "pk": 141,
+  "fields": {
+    "action_time": "2023-01-15T11:54:41.516Z",
+    "user": 4,
+    "content_type": 12,
+    "object_id": "11",
+    "object_repr": "Aspicard",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e \\u043d\\u0430 \\u0441\\u043a\\u043b\\u0430\\u0434\\u0435\", \"Slug\"]}}, {\"added\": {\"name\": \"medicine manufacturer\", \"object\": \"Aspicard - \\u0411\\u0435\\u043b\\u041c\\u0435\\u0434\\u041f\\u0440\\u0435\\u043f\\u0430\\u0440\\u0430\\u0442\\u044b - Republic of Belarus\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 142,
+  "fields": {
+    "action_time": "2023-01-15T12:13:02.389Z",
+    "user": 4,
+    "content_type": 12,
+    "object_id": "11",
+    "object_repr": "Aspicard",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 143,
+  "fields": {
+    "action_time": "2023-01-15T12:22:17.814Z",
+    "user": 4,
+    "content_type": 12,
+    "object_id": "13",
+    "object_repr": "Paraf",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"medicine manufacturer\", \"object\": \"Paraf - Santen - Finlandia\"}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 144,
+  "fields": {
+    "action_time": "2023-01-15T17:45:46.799Z",
+    "user": 4,
+    "content_type": 12,
+    "object_id": "15",
+    "object_repr": "ACC",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 145,
+  "fields": {
+    "action_time": "2023-01-15T17:48:32.991Z",
+    "user": 4,
+    "content_type": 12,
+    "object_id": "12",
+    "object_repr": "Sumamed",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
   "model": "auth.permission",
   "pk": 1,
   "fields": {
@@ -2039,7 +2104,7 @@
   "model": "auth.permission",
   "pk": 25,
   "fields": {
-    "name": "Can add РЈС‡. Р·Р°РІРµРґРµРЅРёРµ",
+    "name": "Can add Уч. заведение",
     "content_type": 7,
     "codename": "add_backgrounds"
   }
@@ -2048,7 +2113,7 @@
   "model": "auth.permission",
   "pk": 26,
   "fields": {
-    "name": "Can change РЈС‡. Р·Р°РІРµРґРµРЅРёРµ",
+    "name": "Can change Уч. заведение",
     "content_type": 7,
     "codename": "change_backgrounds"
   }
@@ -2057,7 +2122,7 @@
   "model": "auth.permission",
   "pk": 27,
   "fields": {
-    "name": "Can delete РЈС‡. Р·Р°РІРµРґРµРЅРёРµ",
+    "name": "Can delete Уч. заведение",
     "content_type": 7,
     "codename": "delete_backgrounds"
   }
@@ -2066,7 +2131,7 @@
   "model": "auth.permission",
   "pk": 28,
   "fields": {
-    "name": "Can view РЈС‡. Р·Р°РІРµРґРµРЅРёРµ",
+    "name": "Can view Уч. заведение",
     "content_type": 7,
     "codename": "view_backgrounds"
   }
@@ -2075,7 +2140,7 @@
   "model": "auth.permission",
   "pk": 29,
   "fields": {
-    "name": "Can add Р”РѕР»Р¶РЅРѕСЃС‚СЊ",
+    "name": "Can add Должность",
     "content_type": 8,
     "codename": "add_positions"
   }
@@ -2084,7 +2149,7 @@
   "model": "auth.permission",
   "pk": 30,
   "fields": {
-    "name": "Can change Р”РѕР»Р¶РЅРѕСЃС‚СЊ",
+    "name": "Can change Должность",
     "content_type": 8,
     "codename": "change_positions"
   }
@@ -2093,7 +2158,7 @@
   "model": "auth.permission",
   "pk": 31,
   "fields": {
-    "name": "Can delete Р”РѕР»Р¶РЅРѕСЃС‚СЊ",
+    "name": "Can delete Должность",
     "content_type": 8,
     "codename": "delete_positions"
   }
@@ -2102,7 +2167,7 @@
   "model": "auth.permission",
   "pk": 32,
   "fields": {
-    "name": "Can view Р”РѕР»Р¶РЅРѕСЃС‚СЊ",
+    "name": "Can view Должность",
     "content_type": 8,
     "codename": "view_positions"
   }
@@ -2111,7 +2176,7 @@
   "model": "auth.permission",
   "pk": 33,
   "fields": {
-    "name": "Can add Р Р°Р±РѕС‚РЅРёРє",
+    "name": "Can add Работник",
     "content_type": 9,
     "codename": "add_staff"
   }
@@ -2120,7 +2185,7 @@
   "model": "auth.permission",
   "pk": 34,
   "fields": {
-    "name": "Can change Р Р°Р±РѕС‚РЅРёРє",
+    "name": "Can change Работник",
     "content_type": 9,
     "codename": "change_staff"
   }
@@ -2129,7 +2194,7 @@
   "model": "auth.permission",
   "pk": 35,
   "fields": {
-    "name": "Can delete Р Р°Р±РѕС‚РЅРёРє",
+    "name": "Can delete Работник",
     "content_type": 9,
     "codename": "delete_staff"
   }
@@ -2138,7 +2203,7 @@
   "model": "auth.permission",
   "pk": 36,
   "fields": {
-    "name": "Can view Р Р°Р±РѕС‚РЅРёРє",
+    "name": "Can view Работник",
     "content_type": 9,
     "codename": "view_staff"
   }
@@ -2147,7 +2212,7 @@
   "model": "auth.permission",
   "pk": 37,
   "fields": {
-    "name": "Can add РЎС‚СЂР°РЅР°",
+    "name": "Can add Страна",
     "content_type": 10,
     "codename": "add_country"
   }
@@ -2156,7 +2221,7 @@
   "model": "auth.permission",
   "pk": 38,
   "fields": {
-    "name": "Can change РЎС‚СЂР°РЅР°",
+    "name": "Can change Страна",
     "content_type": 10,
     "codename": "change_country"
   }
@@ -2165,7 +2230,7 @@
   "model": "auth.permission",
   "pk": 39,
   "fields": {
-    "name": "Can delete РЎС‚СЂР°РЅР°",
+    "name": "Can delete Страна",
     "content_type": 10,
     "codename": "delete_country"
   }
@@ -2174,7 +2239,7 @@
   "model": "auth.permission",
   "pk": 40,
   "fields": {
-    "name": "Can view РЎС‚СЂР°РЅР°",
+    "name": "Can view Страна",
     "content_type": 10,
     "codename": "view_country"
   }
@@ -2183,7 +2248,7 @@
   "model": "auth.permission",
   "pk": 41,
   "fields": {
-    "name": "Can add РџСЂРѕРёР·РІРѕРґРёС‚РµР»СЊ",
+    "name": "Can add Производитель",
     "content_type": 11,
     "codename": "add_manufacturer"
   }
@@ -2192,7 +2257,7 @@
   "model": "auth.permission",
   "pk": 42,
   "fields": {
-    "name": "Can change РџСЂРѕРёР·РІРѕРґРёС‚РµР»СЊ",
+    "name": "Can change Производитель",
     "content_type": 11,
     "codename": "change_manufacturer"
   }
@@ -2201,7 +2266,7 @@
   "model": "auth.permission",
   "pk": 43,
   "fields": {
-    "name": "Can delete РџСЂРѕРёР·РІРѕРґРёС‚РµР»СЊ",
+    "name": "Can delete Производитель",
     "content_type": 11,
     "codename": "delete_manufacturer"
   }
@@ -2210,7 +2275,7 @@
   "model": "auth.permission",
   "pk": 44,
   "fields": {
-    "name": "Can view РџСЂРѕРёР·РІРѕРґРёС‚РµР»СЊ",
+    "name": "Can view Производитель",
     "content_type": 11,
     "codename": "view_manufacturer"
   }
@@ -2219,7 +2284,7 @@
   "model": "auth.permission",
   "pk": 45,
   "fields": {
-    "name": "Can add Р›РµРєР°СЂСЃС‚РІРѕ",
+    "name": "Can add Лекарство",
     "content_type": 12,
     "codename": "add_medicine"
   }
@@ -2228,7 +2293,7 @@
   "model": "auth.permission",
   "pk": 46,
   "fields": {
-    "name": "Can change Р›РµРєР°СЂСЃС‚РІРѕ",
+    "name": "Can change Лекарство",
     "content_type": 12,
     "codename": "change_medicine"
   }
@@ -2237,7 +2302,7 @@
   "model": "auth.permission",
   "pk": 47,
   "fields": {
-    "name": "Can delete Р›РµРєР°СЂСЃС‚РІРѕ",
+    "name": "Can delete Лекарство",
     "content_type": 12,
     "codename": "delete_medicine"
   }
@@ -2246,7 +2311,7 @@
   "model": "auth.permission",
   "pk": 48,
   "fields": {
-    "name": "Can view Р›РµРєР°СЂСЃС‚РІРѕ",
+    "name": "Can view Лекарство",
     "content_type": 12,
     "codename": "view_medicine"
   }
@@ -2291,7 +2356,7 @@
   "model": "auth.permission",
   "pk": 53,
   "fields": {
-    "name": "Can add Р—Р°РєР°Р·",
+    "name": "Can add Заказ",
     "content_type": 14,
     "codename": "add_order"
   }
@@ -2300,7 +2365,7 @@
   "model": "auth.permission",
   "pk": 54,
   "fields": {
-    "name": "Can change Р—Р°РєР°Р·",
+    "name": "Can change Заказ",
     "content_type": 14,
     "codename": "change_order"
   }
@@ -2309,7 +2374,7 @@
   "model": "auth.permission",
   "pk": 55,
   "fields": {
-    "name": "Can delete Р—Р°РєР°Р·",
+    "name": "Can delete Заказ",
     "content_type": 14,
     "codename": "delete_order"
   }
@@ -2318,7 +2383,7 @@
   "model": "auth.permission",
   "pk": 56,
   "fields": {
-    "name": "Can view Р—Р°РєР°Р·",
+    "name": "Can view Заказ",
     "content_type": 14,
     "codename": "view_order"
   }
@@ -2543,7 +2608,7 @@
   "model": "auth.permission",
   "pk": 81,
   "fields": {
-    "name": "Can add РљРѕСЂР·РёРЅР°",
+    "name": "Can add Корзина",
     "content_type": 21,
     "codename": "add_cart"
   }
@@ -2552,7 +2617,7 @@
   "model": "auth.permission",
   "pk": 82,
   "fields": {
-    "name": "Can change РљРѕСЂР·РёРЅР°",
+    "name": "Can change Корзина",
     "content_type": 21,
     "codename": "change_cart"
   }
@@ -2561,7 +2626,7 @@
   "model": "auth.permission",
   "pk": 83,
   "fields": {
-    "name": "Can delete РљРѕСЂР·РёРЅР°",
+    "name": "Can delete Корзина",
     "content_type": 21,
     "codename": "delete_cart"
   }
@@ -2570,7 +2635,7 @@
   "model": "auth.permission",
   "pk": 84,
   "fields": {
-    "name": "Can view РљРѕСЂР·РёРЅР°",
+    "name": "Can view Корзина",
     "content_type": 21,
     "codename": "view_cart"
   }
@@ -2979,40 +3044,40 @@
   "model": "staff_side.positions",
   "pk": 1,
   "fields": {
-    "post_name": "Р—Р°РІРµРґСѓСЋС‰РёР№",
-    "responsibility": "РљРѕРЅС‚СЂРѕР»СЊ СЂР°Р±РѕС‚С‹ РІСЃРµР№ Р°РїС‚РµРєРё Рё РІСЃРµС… РїРѕРґС‡РёРЅС‘РЅРЅС‹С…"
+    "post_name": "Заведующий",
+    "responsibility": "Контроль работы всей аптеки и всех подчинённых"
   }
 },
 {
   "model": "staff_side.positions",
   "pk": 2,
   "fields": {
-    "post_name": "Р’РµРґСѓС‰РёР№ Р±СѓС…РіР°Р»С‚РµСЂ",
-    "responsibility": "РџСЂРµРґРѕСЃС‚Р°РІР»РµРЅРёРµ РѕС‚С‡С‘С‚РѕРІ РІ СѓРїСЂР°РІР»РµРЅРёРµ, СЃРІРµРґРµРЅРёРµ С„РёРЅР°РЅСЃРѕРІРѕР№ РґРµСЏС‚РµР»СЊРЅРѕСЃС‚Рё Р°РїС‚РµРєРё Рё СЂР°Р№РѕРЅР°, СЂР°СЃСЃС‡РёС‚С‹РІР°РЅРёРµ РїСЂРµРјРёРё Рё РґСЂСѓРіРѕРµ"
+    "post_name": "Ведущий бухгалтер",
+    "responsibility": "Предоставление отчётов в управление, сведение финансовой деятельности аптеки и района, рассчитывание премии и другое"
   }
 },
 {
   "model": "staff_side.positions",
   "pk": 3,
   "fields": {
-    "post_name": "РџСЂРѕРІРёР·РѕСЂ-СЂРµС†РµРїС‚Р°СЂ",
-    "responsibility": "Р РµР°Р»РёР·Р°С†РёСЏ Р»РµРєР°СЂСЃС‚РІРµРЅРЅС‹С… СЃСЂРµРґСЃС‚РІ, РєРѕРЅСЃСѓР»СЊС‚Р°С†РёСЏ РїРѕ РїСЂРёРјРµРЅРµРЅРёСЋ Р›РЎ, РёР·РіРѕС‚РѕРІР»РµРЅРёРµ Р›РЎ, РїСЂРёС‘РјРєР° С‚РѕРІР°СЂР° Рё Рґ.СЂ."
+    "post_name": "Провизор-рецептар",
+    "responsibility": "Реализация лекарственных средств, консультация по применению ЛС, изготовление ЛС, приёмка товара и д.р."
   }
 },
 {
   "model": "staff_side.positions",
   "pk": 4,
   "fields": {
-    "post_name": "Р¤Р°СЂРјР°С†РµРІС‚-СЂРµС†РµРїС‚Р°СЂ",
-    "responsibility": "Р РµР°Р»РёР·Р°С†РёСЏ Р»РµРєР°СЂСЃС‚РІРµРЅРЅС‹С… СЃСЂРµРґСЃС‚РІ, РёР·РіРѕС‚РѕРІР»РµРЅРёРµ Р›РЎ, РїСЂРёС‘РјРєР° С‚РѕРІР°СЂР° Рё Рґ.СЂ."
+    "post_name": "Фармацевт-рецептар",
+    "responsibility": "Реализация лекарственных средств, изготовление ЛС, приёмка товара и д.р."
   }
 },
 {
   "model": "staff_side.positions",
   "pk": 5,
   "fields": {
-    "post_name": "РЈР±РѕСЂС‰РёРє-РїРѕРјРµС‰РµРЅРёР№",
-    "responsibility": "РЈР±РѕСЂРєР° Р°РїС‚РµРєРё"
+    "post_name": "Уборщик-помещений",
+    "responsibility": "Уборка аптеки"
   }
 },
 {
@@ -3059,7 +3124,7 @@
   "model": "staff_side.backgrounds",
   "pk": 6,
   "fields": {
-    "educational_institution": "РЁРєРѕР»Р°",
+    "educational_institution": "Школа",
     "education_completeness": "FULL"
   }
 },
@@ -3067,7 +3132,7 @@
   "model": "staff_side.backgrounds",
   "pk": 7,
   "fields": {
-    "educational_institution": "РЁРєРѕР»Р°",
+    "educational_institution": "Школа",
     "education_completeness": "NOT_FULL"
   }
 },
@@ -3124,9 +3189,9 @@
   "model": "client_side.manufacturer",
   "pk": 1,
   "fields": {
-    "legacy_name": "Р‘РµР»РњРµРґРџСЂРµРїР°СЂР°С‚С‹",
+    "legacy_name": "БелМедПрепараты",
     "country": 2,
-    "legacy_address": "РђСЂР°РЅСЃРєР°СЏ",
+    "legacy_address": "Аранская",
     "site": null,
     "contacts": "+375555555555",
     "email": null
@@ -3369,6 +3434,20 @@
   }
 },
 {
+  "model": "client_side.medicine",
+  "pk": 15,
+  "fields": {
+    "trade_name": "ACC",
+    "international_name": "ACC",
+    "structure": "ACC",
+    "price": 24.0,
+    "slug": "ACC",
+    "_price_increment": 2,
+    "with_recipe": false,
+    "amount_on_stock": 0
+  }
+},
+{
   "model": "client_side.medicinemanufacturer",
   "pk": 1,
   "fields": {
@@ -3454,7 +3533,7 @@
   "fields": {
     "user": 4,
     "session_key": "i28z82k2w0d07lf3d6zvfl34kpzonp8c",
-    "cost": 350.04999999999995
+    "cost": 456.75999999999993
   }
 },
 {
@@ -3463,7 +3542,7 @@
   "fields": {
     "medicine": 9,
     "cart": 2,
-    "_amount": 1
+    "_amount": 2
   }
 },
 {
@@ -3481,7 +3560,7 @@
   "fields": {
     "medicine": 6,
     "cart": 2,
-    "_amount": 1
+    "_amount": 2
   }
 },
 {
@@ -3491,6 +3570,24 @@
     "medicine": 4,
     "cart": 2,
     "_amount": 1
+  }
+},
+{
+  "model": "client_side.medicinecart",
+  "pk": 9,
+  "fields": {
+    "medicine": 8,
+    "cart": 2,
+    "_amount": 1
+  }
+},
+{
+  "model": "client_side.medicinecart",
+  "pk": 10,
+  "fields": {
+    "medicine": 3,
+    "cart": 2,
+    "_amount": 3
   }
 }
 ]

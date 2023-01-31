@@ -1,0 +1,29 @@
+{% extends 'client_side/base.html' %}
+{% load static %}
+
+
+
+
+
+{% block content %}
+<h1>{{title}}</h1>
+
+{% block css_additional %}
+  <link href="{% static 'client_side/css/styles22.css' %}" rel="stylesheet" type="text/css" media="all" />
+  <script src="https://kit.fontawesome.com/d8d796b449.js" crossorigin="anonymous"></script>
+{% endblock %}
+<a href="{% url 'home' %}" class="back"><button >Назад</button></a>
+<form method="post">
+    {% csrf_token %}
+
+
+<div class="form-error">{{ form.non_field_errors }}</div>
+
+{% for f in form %}
+<p><label class="form-label" for="{{ f.id_for_label }}">{{f.label}}: </label>{{ f }}</p>
+<div class="form-error">{{ f.errors }}</div>
+{% endfor %}
+    <button type="submit" class="fa-solid fa-dungeon"> Войти </button>
+</form>
+
+{% endblock %}

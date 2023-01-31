@@ -45,9 +45,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    'django_extensions',
+    'fontawesomefree',
     'django_filters',
-
+    'debug_toolbar',
+    'captcha',
     'staff_side.apps.StaffSideConfig',
     'client_side.apps.ClientSideConfig',
     'accounts.apps.AccountsConfig',
@@ -68,13 +70,14 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 SITE_ID = 1
 
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
-    'allauth.account.auth_backends.AuthenticationBackend',
+    # 'allauth.account.auth_backends.AuthenticationBackend',
 ]
 
 ROOT_URLCONF = 'medicine_shop_project.urls'
@@ -82,7 +85,7 @@ ROOT_URLCONF = 'medicine_shop_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -126,11 +129,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "client_side/static"),
-    os.path.join(BASE_DIR, "staff_side/static"),
-]
-
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
@@ -146,7 +144,26 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
+INTERNAL_IPS = [
+    '127.0.0.1',
+]
+
+# STATIC_URL – префикс URL-адреса для статических файлов;
 STATIC_URL = 'static/'
+# STATICFILES_DIRS – список дополнительных (нестандартных) путей к
+# статическим файлам, используемых для сбора и для режима отладки.
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "client_side/static"),
+    os.path.join(BASE_DIR, "staff_side/static"),
+]
+# STATIC_ROOT – путь к общей статической папке,
+# используемой реальным веб-сервером;
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+CAPTCHA_FONT_SIZE = 26
+CAPTCHA_FOREGROUND_COLOR = 'red'
+CAPTCHA_CHALLENGE_FUNCT = 'captcha.helpers.math_challenge'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
@@ -155,7 +172,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_URL = '/accounts/login/'
 
-LOGIN_REDIRECT_URL = '/'
+# LOGIN_REDIRECT_URL = '/'
 
 # это тонкие настройки шаблонов авторизации и регистрации
 ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
@@ -166,6 +183,17 @@ ACCOUNT_AUTHENTICATION_METHOD = 'email'
 EMAIL_CONFIRMATION_SIGNUP = True
 ACCOUNT_CONFIRM_EMAIL_ON_GET = False
 ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 1
+
+# Рассположено в текущем каталоге проекта. BASE_DIR- определяет текущую папку
+# нашего проекта. К рабочей папке добавляется подкаталог media.
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# доб в Url графическим файлам префикс media.
+MEDIA_URL = '/media/'
+
+
+
+
+
 
 # EMAIL_HOST = 'smtp.mail.ru'
 # EMAIL_PORT = 465  # порт smtp сервера тоже одинаковый
@@ -180,3 +208,5 @@ ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 1
 # Экспортируем всю базы данных:
 # исключить таблицы contenttypes и auth.permissions:
 # manage.py dumpdata --exclude auth.permission --exclude contenttypes --indent 2 > db.json
+# python manage.py loaddata mydata.json # востанавливает удалённую БД
+# python manage.py  flush #  удаляет БД

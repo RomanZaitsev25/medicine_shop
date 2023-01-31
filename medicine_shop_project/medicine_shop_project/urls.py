@@ -18,10 +18,25 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),  # Новое приложение
     path('', include('client_side.urls')),
     path('staffs/', include('staff_side.urls')),
+    path('captcha/', include('captcha.urls')),
+    # path('cart/', include('cart.urls')),
+
 
 ]
+
+if settings.DEBUG:
+    import debug_toolbar
+
+    urlpatterns = [
+                      path('__debug__/', include(debug_toolbar.urls)),
+                  ] + urlpatterns
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+# handler404 = pageNotFound

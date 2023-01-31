@@ -12,7 +12,7 @@ body
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 11pt;
 	font-weight: 300;
-	color: #91058c;
+	color: #8ae70c;
 }
 
 h1, h2, h3
@@ -986,6 +986,12 @@ table tbody tr:hover {
     display: flex;
 }
 
+.back {
+    display: center;
+    color:red;
+    font-size:2rem;
+}
+
 h1.green {
     color: #4CAF50;
 }
@@ -1012,3 +1018,5 @@ h1.green {
     background-color: #ddd;
     border-radius: 5px;
 }
+
+

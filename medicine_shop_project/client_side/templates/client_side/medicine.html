@@ -1,5 +1,7 @@
-{% extends 'base.html' %}
+{% extends 'client_side/base.html' %}
 {% load register_customs %}
+
+<script src="https://kit.fontawesome.com/d8d796b449.js" crossorigin="anonymous"></script>
 
 {% block title %}
 Medicines
@@ -7,14 +9,17 @@ Medicines
 
 {% block content %}
 
-<div class="medicine-title">Все лекарства</div>
+<div class="medicine-title" >Все лекарства</div>
 
 <form action="" method="get">
    <div class="filter-set">{{ filterset.form.as_p }}</div>
     <div style="display: flex; justify-content: space-evenly;">
-        <input type="submit" value="Найти" />
+        <button  class="fa-solid fa-magnifying-glass">Найти</button>
     </div>
 </form>
+
+
+
 
 <div id="featured-wrapper">
 
@@ -40,6 +45,7 @@ Medicines
                 </tr>
                 </thead>
                 <tbody>
+
                     {% for medicine in medicines %}
                         <tr>
                             <td>
@@ -57,7 +63,8 @@ Medicines
                                 {% endfor %}
                             </td>
                             <td>
-                                <a class="fa fa-arrow-circle-down" title="Добавить в корзину" href="{% url 'add_to_cart' medicine.id %}"></a></h3>
+
+                                <a class="fa-solid fa-cart-shopping"  title="Добавить в корзину" href="{% url 'add_to_cart' medicine.id %}"></a></h3>
                             </td>
                         </tr>
                     {% endfor %}

@@ -1,0 +1,75 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{% block title %}  {% endblock title %}</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="{% static 'client_side/css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'client_side/css/fonts.css' %}" rel="stylesheet" type="text/css" media="all" />
+<script src="https://kit.fontawesome.com/d8d796b449.js" crossorigin="anonymous"></script>
+	<link rel="shortcut icon" href="{% static 'client_side/img/logo.jpg' %}" type="image/x-icon"/>
+
+</head>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><span class="fa fa-plus-square"></span><a href="{% url 'medicines' %}">MY FARMACY</a></h1>
+			<h3><span style="color: white;">{{ time_now|date:'d M Y' }}</span></h3>
+		</div>
+		<div id="menu">
+			<ul>
+				{% if title == 'index' %}
+					<li class="current_page_item"><a href="{% url 'home' %}" accesskey="1" title="Home">Home</a></li>
+					<li><a href="{% url 'medicines' %}" accesskey="2" title="Medicine">Medicine</a></li>
+					<li><a href="{% url 'cart' user.id %}"  accesskey="2" title="Cart">Your Cart</a></li>
+					{% if request.user.is_authenticated %}
+					<li class="last"> {{user.username}} | <a href="{% url 'logout' %}">Выйти</a></li>
+					{% else %}
+				    <li><a href="{% url 'register' %}"  accesskey="2" title="Cart">Регистрация</a>|<a href="{% url 'login' %}"  accesskey="2" title="Cart">Войти</a></li>
+					{% endif %}
+				    <li><a href="{% url 'contact' %}" accesskey="2" title="Medicine">Обратная связь</a></li>
+				{% elif title == 'medicines' %}
+					<li><a href="{% url 'home' %}" accesskey="1" title="Home">Home</a></li>
+					<li class="current_page_item"><a href="{% url 'medicines' %}" accesskey="2" title="Medicine">Medicine</a></li>
+					<li><a href="{% url 'cart' user.id %}" accesskey="2" title="Cart">Your Cart</a></li>
+				    {% if request.user.is_authenticated %}
+					<li class="last"> {{user.username}} | <a href="{% url 'logout' %}">Выйти</a></li>
+					{% else %}
+				    <li><a href="{% url 'register' %}"  accesskey="2" title="Cart">Регистрация</a>|<a href="{% url 'login' %}"  accesskey="2" title="Cart">Войти</a></li>
+					{% endif %}
+				    <li><a href="{% url 'contact' %}" accesskey="2" title="Medicine">Обратная связь</a></li>
+				{% elif title == 'cart' %}
+					<li><a href="{% url 'home' %}" accesskey="1" title="Home">Home</a></li>
+					<li><a href="{% url 'medicines' %}" accesskey="2" title="Medicine">Medicine</a></li>
+					<li class="current_page_item"><a href="{% url 'cart' user.id %}" accesskey="2" title="Cart">Your Cart</a></li>
+					{% if request.user.is_authenticated %}
+					<li class="last"> {{user.username}} | <a href="{% url 'logout' %}">Выйти</a></li>
+					{% else %}
+				    <li><a href="{% url 'register' %}"  accesskey="2" title="Cart">Регистрация</a>|<a href="{% url 'login' %}"  accesskey="2" title="Cart">Войти</a></li>
+					{% endif %}
+				    <li><a href="{% url 'contact' %}" accesskey="2" title="Medicine">Обратная связь</a></li>
+				{% endif %}
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+<body>
+{% block main %}
+
+<div id="wrapper">
+{% block content %}
+{% endblock content %}
+</div>
+
+{% endblock main %}
+<div id="copyright" class="container">
+	<p></p>
+</div>
+</body>
+</html>

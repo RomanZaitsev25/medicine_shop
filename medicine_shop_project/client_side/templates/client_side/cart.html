@@ -1,5 +1,7 @@
-{% extends 'base.html' %}
+{% extends 'client_side/base.html' %}
 {% load register_customs %}
+
+<script src="https://kit.fontawesome.com/d8d796b449.js" crossorigin="anonymous"></script>
 
 {% block title %}
 Medicines
@@ -12,7 +14,7 @@ Medicines
 <div id="featured-wrapper">
 
     <div id="featured" class="extra2 margin-btm container">
-
+        <a href="{% url 'medicines' %}" class="back"><button>Назад</button></a>
         {% if medicines_in_cart %}
             <table>
                 <thead>
@@ -21,36 +23,49 @@ Medicines
                         <h2>Название</h2>
                     </td>
                     <td>
-                        <h2>Цена</h2>
-                    </td>
-                    <td>
                         <h2>Производитель</h2>
                     </td>
                     <td>
                         <h2>Количество</h2>
                     </td>
+                    <td>
+                        <h2>Цена</h2>
+                    </td>
+                    <td>
+                        <h2>Общая сумма</h2>
+                    </td>
+                    <td>
+                        <h2>Удалить</h2>
+                    </td>
+
                 </tr>
                 </thead>
                 <tbody>
                     {% for medicines_cart in medicines_in_cart %}
                         <tr>
                             <td>
-                                <a href="{% url 'medicine_detail' medicines_cart.medicine.slug %}">{{ medicines_cart.medicine.trade_name }}</a>
-                            </td>
-                            <td>
-                                {{ medicines_cart.medicine.price }} BYN
-                            </td>
-                            <td>
                                 {% for manufacturer in medicines_cart.medicine.manufacturer.all %}
                                     {{ manufacturer }}
                                 {% endfor %}
                             </td>
+
+
                             <td>
-                                {{ medicines_cart.amount }}
+                                <a href="{% url 'medicine_detail' medicines_cart.medicine.slug %}">{{ medicines_cart.medicine.trade_name }}</a>
                             </td>
                             <td>
-                              {# Сделать увеличение количества и уменьшение #}
+                                {{ medicines_cart.amount }} BYN
                             </td>
+                            <td>
+                                {{ medicines_cart.medicine.price }}
+                            </td>
+                            <td>
+                               <a href="#"> </a>
+                            </td>
+                             <td>
+                               <a href="{% url 'cart_remove' %}">Remove</a>
+                            </td>
+
                         </tr>
                     {% endfor %}
                 </tbody>
@@ -59,6 +74,9 @@ Medicines
             <h2>Товаров нет!</h2>
         {% endif %}
     </div>
+    <p class="text-right">
+        <a href="{% url 'medicines' %}" class="button light">На сайт заказа</a>
+        <a href="#" class="button">Оформить заказ</a>
 </div>
 
 {% endblock content %}

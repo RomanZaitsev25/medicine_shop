@@ -1,11 +1,13 @@
-{% extends 'base.html' %}
+{% extends 'client_side/base.html' %}
 {% load static %}
 {% block title %}
 Medicines
 {% endblock title %}
 
 {% block content %}
-<link rel="stylesheet" href="{% static 'css/home.css' %}">
+<link rel="stylesheet" href="{% static 'client_side/css/home.css' %}">
+<script src="https://kit.fontawesome.com/d8d796b449.js" crossorigin="anonymous"></script>
+
 <div class="medicine-title">Главная страница</div>
 
 <div id="featured-wrapper">

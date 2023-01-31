@@ -1,4 +1,10 @@
-{% extends 'base.html' %}
+
+{% extends 'client_side/base.html' %}
+
+
+
+<script src="https://kit.fontawesome.com/d8d796b449.js" crossorigin="anonymous"></script>
+
 
 
 {% block title %} {{medicine.trade_name}} {% endblock %}
@@ -8,11 +14,10 @@
 <div class="medicine-title">{{medicine.trade_name}}</div>
 <div id="featured-wrapper">
     <div id="featured" class="extra2 margin-btm container">
-
+        <a href="{% url 'medicines' %}" class="back"><button >Назад</button></a>
         <div class="detail-set"><h1>Название лекарства: </h1>
             <h1 class="green"> {{medicine.trade_name}} </h1>
         </div>
-
         <div class="detail-set"><h1>Международное название: </h1>
             <h1 class="green"> {{medicine.international_name}}</h1>
         </div>

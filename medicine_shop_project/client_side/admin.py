@@ -58,7 +58,8 @@ class MedicineAdmin(admin.ModelAdmin):
             'fields': ('_price_increment',  'slug')
         }),
     )
-
+    actions_on_bottom = False
+    actions_on_top = False
     # def image_show(self, obj):
     #     if obj.image:
     #         return mark_safe("<img src='{}' width = '60'/>"
@@ -88,3 +89,11 @@ class CartAdmin(admin.ModelAdmin):
     list_display = ('id', 'user', 'session_key')
     list_filter = ('user',)
     search_fields = ('user',)
+
+
+admin.site.site_title = 'Админ-панель о заказе лекарств'
+admin.site.site_header = 'Админ-панель о заказе лекарств'
+admin.site.site_url = None
+admin.site.index_title = ''
+
+

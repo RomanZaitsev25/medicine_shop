@@ -31,12 +31,10 @@ class ShowAllStaff(ListView):
         context['date_time'] = datetime.utcnow()
         context['title'] = 'Вторая страница'
         context['filterset'] = self.filterset
-
         return context
 
 
 class ShowOneStaff(PermissionRequiredMixin, DetailView):
-    permission_required = ('staff_side.view_staff',)
     model = Staff
     template_name = 'staff.html'
     context_object_name = 'staff'
