@@ -7,3 +7,8 @@ def url_replace(context, **kwargs):
     for k, v in kwargs.items():
         d[k] = v
     return d.urlencode()
+
+
+@register.filter
+def multiply(value, arg):
+    return value * arg

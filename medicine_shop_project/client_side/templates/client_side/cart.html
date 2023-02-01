@@ -14,7 +14,6 @@ Medicines
 <div id="featured-wrapper">
 
     <div id="featured" class="extra2 margin-btm container">
-        <a href="{% url 'medicines' %}" class="back"><button>Назад</button></a>
         {% if medicines_in_cart %}
             <table>
                 <thead>
@@ -41,37 +40,38 @@ Medicines
                 </tr>
                 </thead>
                 <tbody>
-                    {% for medicines_cart in medicines_in_cart %}
+                    {% for medicine_in_cart in medicines_in_cart %}
                         <tr>
                             <td>
-                                {% for manufacturer in medicines_cart.medicine.manufacturer.all %}
+                                {% for manufacturer in medicine_in_cart.medicine.manufacturer.all %}
                                     {{ manufacturer }}
                                 {% endfor %}
                             </td>
 
 
                             <td>
-                                <a href="{% url 'medicine_detail' medicines_cart.medicine.slug %}">{{ medicines_cart.medicine.trade_name }}</a>
+                                <a href="{% url 'medicine_detail' medicine_in_cart.medicine.slug %}">{{ medicine_in_cart.medicine.trade_name }}</a>
                             </td>
                             <td>
-                                {{ medicines_cart.amount }} BYN
+                                {{ medicine_in_cart.amount }}
                             </td>
                             <td>
-                                {{ medicines_cart.medicine.price }}
+                                {{ medicine_in_cart.medicine.price }} BYN
                             </td>
                             <td>
-                               <a href="#"> </a>
+                               {{ medicine_in_cart.get_total_medicine_cost }}
                             </td>
                              <td>
-                               <a href="{% url 'cart_remove' %}">Remove</a>
+                               <a href="{% url 'remove_from_cart' medicine_in_cart.id %}">Remove</a>
                             </td>
 
                         </tr>
                     {% endfor %}
                 </tbody>
             </table>
+        <h2>ИТОГО: {{ cost }}</h2>
         {% else %}
-            <h2>Товаров нет!</h2>
+            <h2>Товаров в корзине нет!</h2>
         {% endif %}
     </div>
     <p class="text-right">

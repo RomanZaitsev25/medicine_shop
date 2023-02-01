@@ -111,10 +111,6 @@ class ContactFormView(FormView):
         return redirect('home')
 
 
-
-
-
-
 class MedicineListView(ListView):
     model = Medicine
     template_name = 'client_side/medicine.html'
@@ -166,13 +162,21 @@ class MedicineDetailView(DetailView):
 
 
 def cart_view(request, user_id):
+    cart, created = Cart.objects.get_or_create(
+        session_key=request.session.session_key,
+        defaults={'user': request.user},
+    )
     medicines_in_cart = MedicineCart.objects.filter(
         cart=Cart.objects.get(user__id=user_id)
     ).all()
     return render(
         request,
         template_name='client_side/cart.html',
-        context={'medicines_in_cart': medicines_in_cart, 'title': 'cart'},
+        context={
+            'medicines_in_cart': medicines_in_cart,
+            'cost': round(cart.cost, 2),
+            'title': 'cart',
+        },
     )
 
 
@@ -196,16 +200,18 @@ def add_to_cart(request, pk):
     return redirect(to='medicines')
 
 
-def cart_remove(request, medicine_id):
-    # cart = CartAddProductForm(request.POST)
-    cart = Cart(request)
-    medicine = get_object_or_404(Medicine, id=medicine_id)
-    cart.remove(medicine)
-    return redirect('medicine:medicine_detail')
-
-
-
-
+def remove_from_cart(request, pk):
+    try:
+        medicine_cart = MedicineCart.objects.get(id=pk)
+    except Exception as exc:
+        print(exc)
+    else:
+        if medicine_cart.amount == 1:
+            medicine_cart.delete()
+        else:
+            medicine_cart.amount -= 1
+            medicine_cart.save()
+    return redirect(to='cart', user_id=request.user.id)
 
 
 # def cart_remove(request, medicine_id):

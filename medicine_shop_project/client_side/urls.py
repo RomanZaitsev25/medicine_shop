@@ -2,7 +2,7 @@ from django.urls import path
 
 from .views import MedicineListView, IndexView, MedicineDetailView, \
     add_to_cart, cart_view, RegisterUser, LoginUser, logout_user, \
-    ContactFormView, cart_remove
+    ContactFormView, remove_from_cart
 
 urlpatterns = [
     path('medicine/', MedicineListView.as_view(), name='medicines'),
@@ -11,8 +11,8 @@ urlpatterns = [
     path('medicine/<int:pk>/add_to_cart/', add_to_cart,
          name='add_to_cart'),
 
-    path('medicine/cart_remove/', cart_remove,
-         name='cart_remove'),
+    path('medicine/cart_remove/<int:pk>', remove_from_cart,
+         name='remove_from_cart'),
 
     path('cart/<slug:user_id>', cart_view, name='cart'),
     path('', IndexView.as_view(), name='home'),
